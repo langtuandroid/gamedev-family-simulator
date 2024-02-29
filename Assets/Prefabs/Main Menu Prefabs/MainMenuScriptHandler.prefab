@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1721425378107886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4112532421970988}
+  - component: {fileID: 114025438355993190}
+  m_Layer: 0
+  m_Name: MainMenuScriptHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4112532421970988
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721425378107886}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114025438355993190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721425378107886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 951e57e761d0f4d97b5d1668f767649d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Consent: {fileID: 0}
+  ConsentImage: {fileID: 0}
+  ConsentSprites:
+  - {fileID: 21300000, guid: c3a34e3754c95ad46be31558b1a2aaba, type: 3}
+  - {fileID: 21300000, guid: 8d4b5db807cbb54488ad5e2dcca49947, type: 3}
+  - {fileID: 21300000, guid: d7c468f8d0b6c9b41ba9605e89347b01, type: 3}
+  - {fileID: 21300000, guid: 498ce9f86ac5dc64ba15db2945148f48, type: 3}
+  - {fileID: 21300000, guid: 2598668f79b943e48a342472532536d3, type: 3}
+  loadingImage: {fileID: 0}
+  loadingDelayTime: 10
+  mainMenu: {fileID: 0}
+  settingsDialoug: {fileID: 0}
+  RemoveAdsBtns:
+  - {fileID: 0}
+  - {fileID: 0}
+  unlockAllButton:
+  - {fileID: 0}
+  - {fileID: 0}
+  unlockAllChars:
+  - {fileID: 0}
+  - {fileID: 0}
+  UnlockEveryThing: {fileID: 0}
+  Shop: {fileID: 0}
+  soundButton: {fileID: 0}
+  soundOn: {fileID: 21300000, guid: 0b71d33398f4f304993e9872936c9f17, type: 3}
+  SoundOff: {fileID: 21300000, guid: 9da5dcb6870ce21488b78bf6e1fef31b, type: 3}
+  levelSelection: {fileID: 0}
+  levelsParent: {fileID: 0}
+  Levels: []
+  totalLevelsUnlocked: 0
+  selectionScene: {fileID: 0}
+  UserCoins:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  coinstoadd: 50
+  selectionStoreHandler: {fileID: 0}
+  isLoading: 1
+  LoadingBar: {fileID: 0}
+  clearData: 1

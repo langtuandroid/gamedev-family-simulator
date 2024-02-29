@@ -1,0 +1,277 @@
+fileFormatVersion: 2
+guid: 2b6f5e076d74aa54c8c168d8f31fdf32
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__char_swatches_m_007
+    second: {fileID: 2100000, guid: 9c62028ab0af5b544b132bfc020db655, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_ballcards_m1
+    second: {fileID: 2100000, guid: 893d8c925a362c44fb978294334c7467, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_biclops_a_m1
+    second: {fileID: 2100000, guid: 403b303f53d944d478454c97e9601a26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_biclopsguy_m1
+    second: {fileID: 2100000, guid: 6f939e6a18a7e3d40ac31fb63f2b60b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_boxes_m1
+    second: {fileID: 2100000, guid: c962ad8757216a04e8abae3c0feb62c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_celing_m1
+    second: {fileID: 2100000, guid: 8fb17affd0155a34988a02a7a0e0794e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_closed_m1
+    second: {fileID: 2100000, guid: 92f2ab35e076b3a4ea9f5cc5ba643284, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_comics_m1
+    second: {fileID: 2100000, guid: b4e42b582d259a64ea11006229aca746, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_cpu_m1
+    second: {fileID: 2100000, guid: f36ef75c47176b34c9d223c1812c5086, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_engine_m1
+    second: {fileID: 2100000, guid: 9d01b2cf14202d54688d09b91d3e63ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_flags_m1
+    second: {fileID: 2100000, guid: 162718d0b5e3d9c438f5d1f2c87da53d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_floor_m1
+    second: {fileID: 2100000, guid: adb5a529c78e246489f775fd4a39dc9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_glass_m1
+    second: {fileID: 2100000, guid: b79246f858cd5884b837d071a07fde43, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_magrack_m1
+    second: {fileID: 2100000, guid: 95794298cc492e74ebbade6da9583b48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_moulding_m1
+    second: {fileID: 2100000, guid: aa5d812b3bce9bf40b104284dd046072, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_pog_m1
+    second: {fileID: 2100000, guid: 6758f4e32a6378345b11017496c8e5a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_poochieA_m1
+    second: {fileID: 2100000, guid: a39140be24946ef4aa2024c41b238896, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_poochieB_m1
+    second: {fileID: 2100000, guid: 481ff0b6f4d05964fa25c1915064da81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_pricetag_m1
+    second: {fileID: 2100000, guid: d4889d8389370b44f8386b3b4946ee09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_saxbeach_m1
+    second: {fileID: 2100000, guid: 06e99887915e20442a46638b1178009e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_shirtA_m1
+    second: {fileID: 2100000, guid: 788ffa9709a87c64d940651103215710, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_shirtB_m1
+    second: {fileID: 2100000, guid: 458e2ef90a098ea4684f176f8c2a774c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_shirtC_m1
+    second: {fileID: 2100000, guid: 7da29143ffede4b468e17c6f4d60e457, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_shirtD_m1
+    second: {fileID: 2100000, guid: ed7aa6491a9cb074bb1aecb365d28ae7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_slotbus_m1
+    second: {fileID: 2100000, guid: ead837d21e1c22a46b5f25a033bb78a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_slotbuswin_m1
+    second: {fileID: 2100000, guid: 54d6c7f227101aa46b7b15bb6702c745, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_slotcar_m1
+    second: {fileID: 2100000, guid: b71387bbc10d7f244ad645d1b48d9203, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_slottrack_m1
+    second: {fileID: 2100000, guid: 1156b140f2181b647a553f5c5422bdda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_slotwheel_m2
+    second: {fileID: 2100000, guid: b206c7ecfa5b77649a14154fe4bfb5a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_slotwheel_m3
+    second: {fileID: 2100000, guid: b206c7ecfa5b77649a14154fe4bfb5a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_spaceshipA_m1
+    second: {fileID: 2100000, guid: 822abd3867469374b8dabf7ef3b3ab91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_till_m1
+    second: {fileID: 2100000, guid: e6fa2023af1437e4f9c223a7e62c4f60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_walls_m1
+    second: {fileID: 2100000, guid: 0faeac18c6dea514a9b948b8d22b84f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_wooddark_m1
+    second: {fileID: 2100000, guid: 52d233eee1838844988f1aaa4f2d1c3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_and_woodlight_m1
+    second: {fileID: 2100000, guid: 051e78e737b414048921ac606e6045ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TADnBSC__int_shirt_stripes_m1
+    second: {fileID: 2100000, guid: 433402147d1df854486281c797cd7acc, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 2
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
