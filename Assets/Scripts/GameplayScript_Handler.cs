@@ -87,10 +87,10 @@ public class GameplayScript_Handler : MonoBehaviour {
         // {
         //     AdsManager_ZL.instance.CallInterstitialAd(Adspref.Menu);
         // }
-        //if (isTesting)
-        //{
-        //    PlayerPrefs.SetInt("SelectedLevel", testingLevel);
-        //}
+        if (isTesting)
+        {
+            PlayerPrefs.SetInt("SelectedLevel", testingLevel);
+        }
 
         env.SetActive(true);
         if (SoundManager._SoundManager) {
