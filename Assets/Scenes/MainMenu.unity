@@ -48034,6 +48034,165 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1313741843}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2139423059
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1408914285968502, guid: 4e507e73ef67144888d070a24ab0e48c, type: 3}
+      propertyPath: m_Name
+      value: Selection Handler
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376917457277832, guid: 4e507e73ef67144888d070a24ab0e48c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376917457277832, guid: 4e507e73ef67144888d070a24ab0e48c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376917457277832, guid: 4e507e73ef67144888d070a24ab0e48c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376917457277832, guid: 4e507e73ef67144888d070a24ab0e48c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376917457277832, guid: 4e507e73ef67144888d070a24ab0e48c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376917457277832, guid: 4e507e73ef67144888d070a24ab0e48c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376917457277832, guid: 4e507e73ef67144888d070a24ab0e48c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376917457277832, guid: 4e507e73ef67144888d070a24ab0e48c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376917457277832, guid: 4e507e73ef67144888d070a24ab0e48c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376917457277832, guid: 4e507e73ef67144888d070a24ab0e48c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: leftButton
+      value: 
+      objectReference: {fileID: 1373847316488374}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: rightButton
+      value: 
+      objectReference: {fileID: 1961069215376148}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlDressMesh
+      value: 
+      objectReference: {fileID: 170483334003274071}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlRibbonMesh
+      value: 
+      objectReference: {fileID: 7547502744694823370}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlHairBandMesh
+      value: 
+      objectReference: {fileID: 1140834774}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: cameraLookingAtPlayer
+      value: 
+      objectReference: {fileID: 1391746649}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.size
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: fashionItems.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: customizePanel.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 245233057}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 793470892}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: fashionItems.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: bcfa9de0f469d2442b1b31265f447d4e, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: fashionItems.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: 1a9f00a3387992241b3597a41f4d4494, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: fashionItems.Array.data[2]
+      value: 
+      objectReference: {fileID: 2800000, guid: 78215f21a8241574590d97da48203259, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: fashionItems.Array.data[3]
+      value: 
+      objectReference: {fileID: 2800000, guid: 6283c40e01d6fca4da3a4e66bddf5839, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: objectSelected.Array.data[0]
+      value: 
+      objectReference: {fileID: 804133154791545941}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: objectSelected.Array.data[1]
+      value: 
+      objectReference: {fileID: 7104160107571774369}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: objectSelected.Array.data[2]
+      value: 
+      objectReference: {fileID: 2003887011}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e507e73ef67144888d070a24ab0e48c, type: 3}
+--- !u!114 &2139423060 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2139423059}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8fe1e548cdd4618b2069d46c363aae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2140259785
 GameObject:
   m_ObjectHideFlags: 0
@@ -49335,7 +49494,7 @@ MonoBehaviour:
   - {fileID: 1664918263}
   - {fileID: 138446670}
   coinsToAdd: 0
-  selectionStoreHandler: {fileID: 0}
+  selectionStoreHandler: {fileID: 2139423060}
   removeAdsButton: {fileID: 1691650855}
   unlockLevelsButton: {fileID: 1295159204}
   unlockCostumesButton: {fileID: 1775174356}
@@ -49482,9 +49641,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 190704637}
         m_TargetAssemblyTypeName: 
-        m_MethodName: leftRightState
+        m_MethodName: 
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -62359,6 +62518,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 4652088758036746}
   - {fileID: 4112532190725516}
+  - {fileID: 2139423059}
   - {fileID: 397845742}
   - {fileID: 96616482}
   - {fileID: 224639596798698476}
