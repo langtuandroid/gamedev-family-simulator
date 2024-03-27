@@ -74,7 +74,7 @@ public class GameplayHandler : MonoBehaviour {
     [SerializeField] private Text totalCoinsEarned, timerText, coinText;
     [SerializeField] private GameObject spawnedLevel;
     
-    [SerializeField] private LevelModelHandler currentLevelModel;
+    private LevelModelHandler _currentLevelModel;
     
     private int _totalCoins;
     
@@ -82,11 +82,7 @@ public class GameplayHandler : MonoBehaviour {
     [SerializeField] private GameObject rewardedAd;
     [SerializeField] private Image spinnerImage;
     [SerializeField] private float timeToBeLootedAfterRewardedVideo;
-    
-    // ----------- Static Ref. of GamePlay Script Handler Start------------//
-    public static GameplayHandler Gsh;
-    // ----------- Static Ref. of GamePlay Script Handler End------------//
-    
+
     [Inject] private SoundManager _soundManager;
     [Inject] private StoreHandler _storeHandler;
 
@@ -98,9 +94,6 @@ public class GameplayHandler : MonoBehaviour {
     void Awake()
     {
         Time.timeScale = 1f;
-        if (Gsh == null) {
-            Gsh = this;
-        }
         HideButtons();
     }
 
@@ -199,7 +192,7 @@ public class GameplayHandler : MonoBehaviour {
             selectedLevel = PlayerPrefs.GetInt("SelectedLevel");
             unlockedLevel = PlayerPrefs.GetInt("TotalLevelsUnlocked");
             Levels[selectedLevel].SetActive(true);
-            currentLevelModel = Levels[selectedLevel].GetComponent<LevelModelHandler>();
+            _currentLevelModel = Levels[selectedLevel].GetComponent<LevelModelHandler>();
 
         }
         else if (PlayerPrefs.GetInt("SelectedMode") == 1)
@@ -207,7 +200,7 @@ public class GameplayHandler : MonoBehaviour {
             selectedLevel = PlayerPrefs.GetInt("SelectedHouseLevel");
             unlockedLevel = PlayerPrefs.GetInt("TotalHouseLevelsUnlocked");
             Levels[selectedLevel].SetActive(true);
-            currentLevelModel = Levels[selectedLevel].GetComponent<LevelModelHandler>();
+            _currentLevelModel = Levels[selectedLevel].GetComponent<LevelModelHandler>();
         }
        
     }
@@ -232,7 +225,7 @@ public class GameplayHandler : MonoBehaviour {
 
     public LevelModelHandler ReturnLevelModelHandler()
     {
-        return currentLevelModel;
+        return _currentLevelModel;
     }
 
     private IEnumerator LoadingScreenHandler()
@@ -269,7 +262,7 @@ public class GameplayHandler : MonoBehaviour {
         if (!_primaryObjectives) {
             _primaryObjectives = true;
             objDialog.SetActive(true);
-            objText.text = currentLevelModel.PrimaryObjective;
+            objText.text = _currentLevelModel.PrimaryObjective;
         }
     }
 
@@ -310,7 +303,7 @@ public class GameplayHandler : MonoBehaviour {
     }
     
 
-    private void PauseGameDialog()
+    public void PauseGameDialog()
     {
         if (_soundManager) {
             _soundManager.PlayButtonClickSound();

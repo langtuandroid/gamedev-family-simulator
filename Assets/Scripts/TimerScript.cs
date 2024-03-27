@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 public class TimerScript : MonoBehaviour {
 
@@ -8,6 +9,8 @@ public class TimerScript : MonoBehaviour {
 	[SerializeField] private float time = 1200;
 	[SerializeField] private bool stopTimer,stopSpinner;
 
+	[Inject] private GameplayHandler _gameplayHandler;
+	
 	private void Start ()
 	{
 		StartCoroutine(StartCoundownTimer());
@@ -33,13 +36,13 @@ public class TimerScript : MonoBehaviour {
 	{
 		if (time <= 0.5f && !stopTimer) {
 			stopTimer = true;
-			GameplayHandler.Gsh.RewardedAd.SetActive (true);
+			_gameplayHandler.RewardedAd.SetActive (true);
 		}
 		if (stopTimer) {
 			if(!stopSpinner)
-				GameplayHandler.Gsh.SpinnerImage.fillAmount += 0.004f;
-			if (GameplayHandler.Gsh.SpinnerImage.fillAmount > 0.99f) {
-				GameplayHandler.Gsh.LevelFail_CompleteStatusEvent (false);
+				_gameplayHandler.SpinnerImage.fillAmount += 0.004f;
+			if (_gameplayHandler.SpinnerImage.fillAmount > 0.99f) {
+				_gameplayHandler.LevelFail_CompleteStatusEvent (false);
 				gameObject.SetActive (false);
 			}
 		}

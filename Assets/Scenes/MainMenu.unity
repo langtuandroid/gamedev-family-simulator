@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4439372, g: 0.49315345, b: 0.5721989, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -477,7 +477,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeGirlFashion_Items
         m_Mode: 3
@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeGirlHair
         m_Mode: 3
@@ -2534,8 +2534,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2679,7 +2679,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeBoyHair
         m_Mode: 3
@@ -3332,8 +3332,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5440,7 +5440,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeMotherHair
         m_Mode: 3
@@ -5691,7 +5691,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeGirlHair
         m_Mode: 3
@@ -5850,8 +5850,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6765,8 +6765,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ShowLearingModePanel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: ShowLearningModePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6959,7 +6959,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeMotherEyes
         m_Mode: 3
@@ -7971,7 +7971,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeGirlHair
         m_Mode: 3
@@ -9163,6 +9163,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 409083601}
   m_CullTransparentMesh: 0
+--- !u!1 &411013100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 411013101}
+  m_Layer: 0
+  m_Name: System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &411013101
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411013100}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.1041994, y: 0.7056265, z: -1.4476852}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1577782206}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &413465482
 GameObject:
   m_ObjectHideFlags: 0
@@ -9247,7 +9279,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeBoyHair
         m_Mode: 3
@@ -10190,7 +10222,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeMotherDress
         m_Mode: 3
@@ -10434,7 +10466,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeBoyEyes
         m_Mode: 3
@@ -11586,7 +11618,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeGirlEyes
         m_Mode: 3
@@ -11965,8 +11997,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12344,7 +12376,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1738.3177, y: -200}
+  m_AnchoredPosition: {x: 1738.3176, y: -200}
   m_SizeDelta: {x: 300, y: 200}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &627863039
@@ -12511,7 +12543,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeMotherDress
         m_Mode: 3
@@ -12791,7 +12823,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeGirlHair
         m_Mode: 3
@@ -13287,8 +13319,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13576,8 +13608,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: backFromLevelSelection
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: BackFromLevelSelection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13812,7 +13844,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeBoyEyes
         m_Mode: 3
@@ -14737,7 +14769,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeMotherDress
         m_Mode: 3
@@ -15224,8 +15256,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15466,7 +15498,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeMotherEyes
         m_Mode: 3
@@ -16640,7 +16672,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeBoyHair
         m_Mode: 3
@@ -17972,7 +18004,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeGirlHair
         m_Mode: 3
@@ -18163,7 +18195,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeGirlFashion_Items
         m_Mode: 3
@@ -18910,7 +18942,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeGirlHair
         m_Mode: 3
@@ -19976,7 +20008,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeBoyEyes
         m_Mode: 3
@@ -21060,8 +21092,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: BackFromLearingModePanel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: BackFromLearningModePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21620,7 +21652,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeGirlEyes
         m_Mode: 3
@@ -22282,7 +22314,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeGirlFashion_Items
         m_Mode: 3
@@ -22840,7 +22872,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeGirlDress
         m_Mode: 3
@@ -22966,6 +22998,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218484320}
   m_CullTransparentMesh: 0
+--- !u!1 &1225287067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1225287068}
+  - component: {fileID: 1225287069}
+  m_Layer: 0
+  m_Name: MenuInstaller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1225287068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225287067}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1577782206}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1225287069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225287067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5fc57dc4bec5ce43ae5329591d8e869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenuHandler: {fileID: 114025438059805638}
 --- !u!1 &1225392105
 GameObject:
   m_ObjectHideFlags: 0
@@ -23422,7 +23499,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeBoyEyes
         m_Mode: 3
@@ -24775,7 +24852,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeGirlDress
         m_Mode: 3
@@ -24982,7 +25059,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: BuyGirlClothes
         m_Mode: 1
@@ -26267,8 +26344,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26938,7 +27015,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeMotherHair
         m_Mode: 3
@@ -27747,7 +27824,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeGirlFashion_Items
         m_Mode: 3
@@ -29552,7 +29629,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeGirlDress
         m_Mode: 3
@@ -30820,6 +30897,71 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbde420e5b9204c76a50e96a3ac5ab2f, type: 3}
+--- !u!1 &1577782205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1577782206}
+  - component: {fileID: 1577782207}
+  m_Layer: 0
+  m_Name: SceneContext
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1577782206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577782205}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1225287068}
+  m_Father: {fileID: 411013101}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1577782207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577782205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89715ad69b973a14899afa2c6730b30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scriptableObjectInstallers: []
+  _monoInstallers:
+  - {fileID: 1225287069}
+  _installerPrefabs: []
+  _autoRun: 1
+  OnPreInstall:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPostInstall:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPreResolve:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPostResolve:
+    m_PersistentCalls:
+      m_Calls: []
+  _parentNewObjectsUnderSceneContext: 0
+  _contractNames: []
+  _parentContractNames: []
 --- !u!1 &1580993924
 GameObject:
   m_ObjectHideFlags: 0
@@ -31806,8 +31948,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -31951,7 +32093,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeGirlDress
         m_Mode: 3
@@ -32978,7 +33120,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: CheckUnlockedCostumeItems
         m_Mode: 1
@@ -35155,7 +35297,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeMotherEyes
         m_Mode: 3
@@ -36609,7 +36751,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeGirlEyes
         m_Mode: 3
@@ -37004,7 +37146,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeBoyHair
         m_Mode: 3
@@ -37424,7 +37566,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeMotherHair
         m_Mode: 3
@@ -38605,7 +38747,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeMotherHair
         m_Mode: 3
@@ -39370,8 +39512,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -45786,7 +45928,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeGirlEyes
         m_Mode: 3
@@ -46177,7 +46319,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeMotherDress
         m_Mode: 3
@@ -46508,8 +46650,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -47025,7 +47167,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: ChangeMotherEyes
         m_Mode: 3
@@ -48436,23 +48578,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1273508029013589
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4733121929979677}
-  - component: {fileID: 82112097712007245}
-  m_Layer: 0
-  m_Name: ButtonSFX AudioSource
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1276016808309366
 GameObject:
   m_ObjectHideFlags: 0
@@ -48558,7 +48683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cf4307357b7c143830b5b4ac4ad9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnEnableEvent:
+  onEnableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
@@ -48573,7 +48698,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnDisableEvent:
+  onDisableEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &1373847316488374
@@ -48608,23 +48733,6 @@ GameObject:
   - component: {fileID: 114252716691414658}
   m_Layer: 5
   m_Name: Lock
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1408913734605154
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4376918013228700}
-  - component: {fileID: 114451476019106870}
-  m_Layer: 0
-  m_Name: SelectionScript
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48718,23 +48826,6 @@ GameObject:
   - component: {fileID: 114756215184155952}
   m_Layer: 5
   m_Name: Level 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1552596377463823
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4108615762590459}
-  - component: {fileID: 82043708120877263}
-  m_Layer: 0
-  m_Name: LevelComplete/Fail AudioSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48869,24 +48960,6 @@ GameObject:
   - component: {fileID: 114025438059805638}
   m_Layer: 0
   m_Name: MainMenuScript
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1750409103765183
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4732672975353805}
-  - component: {fileID: 114868730283599381}
-  - component: {fileID: 81340082578472405}
-  m_Layer: 0
-  m_Name: SoundManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49064,23 +49137,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1919906034596815
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4470858986093905}
-  - component: {fileID: 82319847837457811}
-  m_Layer: 0
-  m_Name: Music AudioSource
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1938964865144212
 GameObject:
   m_ObjectHideFlags: 0
@@ -49137,21 +49193,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4108615762590459
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1552596377463823}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4732672975353805}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4112532190725516
 Transform:
   m_ObjectHideFlags: 0
@@ -49167,36 +49208,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4376918013228700
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408913734605154}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4470858986093905
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919906034596815}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4732672975353805}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4652088758036746
 Transform:
   m_ObjectHideFlags: 0
@@ -49211,39 +49222,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4732672975353805
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1750409103765183}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4470858986093905}
-  - {fileID: 4733121929979677}
-  - {fileID: 4108615762590459}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4733121929979677
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1273508029013589}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4732672975353805}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &42453016876923364
 Transform:
@@ -49276,302 +49254,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6727413366782924642}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &81340082578472405
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1750409103765183}
-  m_Enabled: 1
---- !u!82 &82043708120877263
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1552596377463823}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
---- !u!82 &82112097712007245
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1273508029013589}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
---- !u!82 &82319847837457811
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919906034596815}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
 --- !u!4 &84203288977809424
 Transform:
   m_ObjectHideFlags: 0
@@ -49622,38 +49304,38 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 912af5c83c25148eb8d9e16a57a4f9dc, type: 3}
   - {fileID: 21300000, guid: 912af5c83c25148eb8d9e16a57a4f9dc, type: 3}
   - {fileID: 21300000, guid: 912af5c83c25148eb8d9e16a57a4f9dc, type: 3}
-  LoadingBar: {fileID: 1287767265}
-  loading_Text: {fileID: 391652856}
+  loadingBar: {fileID: 1287767265}
+  loadingText: {fileID: 391652856}
   loadingPanel: {fileID: 1373367849614710}
   loadingDelayTime: 10
   mainMenuPanel: {fileID: 1182606423354610}
   modeSelectionPanel: {fileID: 190704637}
   customizationPanel: {fileID: 1628034238286900}
-  learnigModePanel: {fileID: 328262526}
+  learningModePanel: {fileID: 328262526}
   scroll:
   - {fileID: 556294517}
   - {fileID: 5122456}
-  park_levelSelection: {fileID: 1189069495720390}
-  house_levelSelection: {fileID: 1078384841}
+  parkLevelSelection: {fileID: 1189069495720390}
+  houseLevelSelection: {fileID: 1078384841}
   shopPanel: {fileID: 3648976020495524572}
   soundButton: {fileID: 8158905681146342989}
   soundOn: {fileID: 21300000, guid: e92eea5b7b2f43746931e59ab4b0c8d8, type: 3}
-  SoundOff: {fileID: 21300000, guid: 704a6b494f7d8644ab51933ef6eb0834, type: 3}
-  park_levelsParent: {fileID: 1770078279915924}
-  park_Levels: []
-  house_levelsParent: {fileID: 483533891}
-  house_Levels: []
+  soundOff: {fileID: 21300000, guid: 704a6b494f7d8644ab51933ef6eb0834, type: 3}
+  parkLevelsParent: {fileID: 1770078279915924}
+  parkLevels: []
+  houseLevelsParent: {fileID: 483533891}
+  houseLevels: []
   totalParkLevelsUnlocked: 0
   totalHouseLevelsUnlocked: 0
-  UserCoins:
+  userCoins:
   - {fileID: 4417622133488087045}
   - {fileID: 2130993630}
   - {fileID: 1945303554}
   - {fileID: 1496780896}
   - {fileID: 1664918263}
   - {fileID: 138446670}
-  coinstoadd: 50
-  selectionStoreHandler: {fileID: 114451476019106870}
+  coinsToAdd: 0
+  selectionStoreHandler: {fileID: 0}
   removeAdsButton: {fileID: 1691650855}
   unlockLevelsButton: {fileID: 1295159204}
   unlockCostumesButton: {fileID: 1775174356}
@@ -49703,8 +49385,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49800,7 +49482,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: leftRightState
         m_Mode: 6
@@ -49886,8 +49568,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -50082,8 +49764,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -50278,8 +49960,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -50428,7 +50110,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114451476019106870}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: leftRightState
         m_Mode: 6
@@ -50777,151 +50459,6 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
---- !u!114 &114451476019106870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408913734605154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a8fe1e548cdd4618b2069d46c363aae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectSelected:
-  - {fileID: 7104160107571774369}
-  - {fileID: 804133154791545941}
-  - {fileID: 2003887011}
-  currentSelected: 0
-  cameraLookingAtPlayer: {fileID: 1391746649}
-  leftButton: {fileID: 1373847316488374}
-  rightButton: {fileID: 1961069215376148}
-  customizePanel:
-  - {fileID: 776312428}
-  - {fileID: 1543180458}
-  - {fileID: 1835250208}
-  girlHair:
-  - {fileID: 2800000, guid: dec0793b22cab0d49b856d7aadb13306, type: 3}
-  - {fileID: 2800000, guid: 66726d1f96c3dbc4f8d75f359811c15d, type: 3}
-  - {fileID: 2800000, guid: 068673680aecf664383b83bb81bfb1cb, type: 3}
-  - {fileID: 2800000, guid: c1f67102523019e4eaeb0457dfb6f80b, type: 3}
-  - {fileID: 2800000, guid: 8433299b966fb144fa732ab211db8c58, type: 3}
-  - {fileID: 2800000, guid: 9f34e65e172596b41ad3e3c7a8c701c1, type: 3}
-  girlEyes:
-  - {fileID: 2800000, guid: 6db84318fd6f9f5438588795fe7079b0, type: 3}
-  - {fileID: 2800000, guid: b146655bf7951214fb0ad0a39c766a06, type: 3}
-  - {fileID: 2800000, guid: 2259c002c335f174eaab83e619dcd2eb, type: 3}
-  - {fileID: 2800000, guid: 3f38c94fed55ebb4eae2ad4b36f3e266, type: 3}
-  girlDress:
-  - {fileID: 2800000, guid: 8c6b84bd6176b124fa1db4c4e8bc509b, type: 3}
-  - {fileID: 2800000, guid: 402106f81ef6ccc4c9907789727b070c, type: 3}
-  - {fileID: 2800000, guid: 93e40c42969dc794485c0c277595e955, type: 3}
-  - {fileID: 2800000, guid: bc9e76470cd2a44499d7dbc7be24318f, type: 3}
-  fashion_Items:
-  - {fileID: 2800000, guid: bcfa9de0f469d2442b1b31265f447d4e, type: 3}
-  - {fileID: 2800000, guid: 1a9f00a3387992241b3597a41f4d4494, type: 3}
-  - {fileID: 2800000, guid: 78215f21a8241574590d97da48203259, type: 3}
-  - {fileID: 2800000, guid: 6283c40e01d6fca4da3a4e66bddf5839, type: 3}
-  girlHairMeshes:
-  - {fileID: 775476577}
-  - {fileID: 435341279}
-  - {fileID: 1347944148}
-  - {fileID: 1681955349}
-  girlEyeMeshes:
-  - {fileID: 672943027}
-  - {fileID: 228372012}
-  girlDressMesh: {fileID: 170483334003274071}
-  girlHairBandMesh: {fileID: 1140834774}
-  girlRibbonMesh: {fileID: 7547502744694823370}
-  girlMaterials:
-  - {fileID: 2100000, guid: 501345ec616afa749a21429aff790cfd, type: 2}
-  - {fileID: 2100000, guid: 266d0714cc1ed934f8dcba29ea809721, type: 2}
-  - {fileID: 2100000, guid: fd849aeb4c261ea43bf8ca55d2cfb987, type: 2}
-  - {fileID: 2100000, guid: c3d3688a2f4fb1340b0ee16c8794901a, type: 2}
-  - {fileID: 2100000, guid: 4855b52379b825742b15a3f3bf67ad2f, type: 2}
-  - {fileID: 2100000, guid: 67edcb572945a2649bebdbe4d7300e4f, type: 2}
-  girlButtons:
-  - {fileID: 352141450}
-  - {fileID: 1000068746}
-  - {fileID: 229256086}
-  - {fileID: 959626180}
-  - {fileID: 657302892}
-  - {fileID: 36464373}
-  - {fileID: 1154145309}
-  - {fileID: 2049792079}
-  - {fileID: 1848224800}
-  - {fileID: 600733565}
-  - {fileID: 1218447988}
-  - {fileID: 1301408414}
-  - {fileID: 1637504148}
-  - {fileID: 1503785749}
-  - {fileID: 966423905}
-  - {fileID: 1190319121}
-  - {fileID: 1418017615}
-  - {fileID: 15119479}
-  buyPanel: {fileID: 1134002285}
-  notEnoughMoneyPanel: {fileID: 1000523181}
-  boyHairMesh01: {fileID: 3605318688298285731}
-  boyHairMesh02: {fileID: 2666353280453984179}
-  boyHair:
-  - {fileID: 2800000, guid: 338d6e2cebc47d148909b9fd86f061f8, type: 3}
-  - {fileID: 2800000, guid: 12a299f076b03404eb22074e8066d1f0, type: 3}
-  - {fileID: 2800000, guid: aba7c21e5516a3c418d6f8bb2a2736ea, type: 3}
-  - {fileID: 2800000, guid: 07e2245d7ad4ce347a160c668dae4e66, type: 3}
-  boyLeftEye: {fileID: 1623377636}
-  boyRightEye: {fileID: 2066185692}
-  boyEyes:
-  - {fileID: 2800000, guid: 6db84318fd6f9f5438588795fe7079b0, type: 3}
-  - {fileID: 2800000, guid: b146655bf7951214fb0ad0a39c766a06, type: 3}
-  - {fileID: 2800000, guid: 2259c002c335f174eaab83e619dcd2eb, type: 3}
-  - {fileID: 2800000, guid: 3f38c94fed55ebb4eae2ad4b36f3e266, type: 3}
-  boyButtons:
-  - {fileID: 877316029}
-  - {fileID: 101622578}
-  - {fileID: 1865779937}
-  - {fileID: 413465482}
-  - {fileID: 481401285}
-  - {fileID: 703078419}
-  - {fileID: 1245564946}
-  - {fileID: 1071486195}
-  boyMaterials:
-  - {fileID: 2100000, guid: 647f8ee040ab72b49a080fa49773952c, type: 2}
-  - {fileID: 2100000, guid: 88421aee3ec89704bbbcb5fa2e4dac3f, type: 2}
-  mother: {fileID: 2003887011}
-  motherHair:
-  - {fileID: 2800000, guid: 705e6d9f66585ac4396cfcea7edbe82d, type: 3}
-  - {fileID: 2800000, guid: 7e1fdb1730caa7a44b94fc8289d7a5f9, type: 3}
-  - {fileID: 2800000, guid: b109338ed0a849b4e89af39483b83377, type: 3}
-  - {fileID: 2800000, guid: bdf7f1d9324ce47478fbc8a1d8447718, type: 3}
-  motherEyes:
-  - {fileID: 2800000, guid: 7575da63d68870c48957242ec34a56ac, type: 3}
-  - {fileID: 2800000, guid: 4a399dededd214f4bb75429b11ca94ad, type: 3}
-  - {fileID: 2800000, guid: e9bdd7b6324f3384b8af390361836dba, type: 3}
-  - {fileID: 2800000, guid: 66121f0a363be264b818d8431655dec4, type: 3}
-  motherDress:
-  - {fileID: 2800000, guid: ade43cdb3543f5a4bb1f6161948ceee4, type: 3}
-  - {fileID: 2800000, guid: 9b74c3da261264a4aa68f3329a41e96d, type: 3}
-  - {fileID: 2800000, guid: e5089c5005afa97469f5279be82fc1a2, type: 3}
-  - {fileID: 2800000, guid: f29f0940da7f3d44fba2d95b2c59e4f4, type: 3}
-  motherMaterials:
-  - {fileID: 2100000, guid: 51acee6646f63d64f9fe3b6611643bef, type: 2}
-  - {fileID: 2100000, guid: 1a09443f9e472844885e1aaee045ad3a, type: 2}
-  - {fileID: 2100000, guid: e19beb69ab9029b4e98bbce08ce69388, type: 2}
-  - {fileID: 2100000, guid: e19beb69ab9029b4e98bbce08ce69388, type: 2}
-  motherButtons:
-  - {fileID: 1386338057}
-  - {fileID: 1886656806}
-  - {fileID: 1939405137}
-  - {fileID: 223440930}
-  - {fileID: 305937837}
-  - {fileID: 2097147001}
-  - {fileID: 799477542}
-  - {fileID: 1774548889}
-  - {fileID: 645134418}
-  - {fileID: 465991240}
-  - {fileID: 2060595878}
-  - {fileID: 771698930}
 --- !u!114 &114489080574646652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51027,8 +50564,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -51575,8 +51112,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -51673,8 +51210,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -51741,8 +51278,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -51958,8 +51495,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -51981,27 +51518,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &114868730283599381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1750409103765183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1a9c676695074386bcf630f55d5fd14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainMenuSound: {fileID: 8300000, guid: d283fb4660547bb4baaacf8aa2ed3610, type: 3}
-  gamePlaySound: {fileID: 8300000, guid: 2397185db45618e4c807e30f93210e5f, type: 3}
-  buttonClick: {fileID: 8300000, guid: f261255eaa7537f46a4473e94fde4bad, type: 3}
-  levelFailed: {fileID: 8300000, guid: f84d0176b25894688906180bf85a6eca, type: 3}
-  levelComplete: {fileID: 8300000, guid: c0d2a599d99864eb583e1900371e24a9, type: 3}
-  musicSource: {fileID: 82319847837457811}
-  sfxSource: {fileID: 82112097712007245}
-  levelFail_CompleteSource: {fileID: 82043708120877263}
-  CurrentAudioListener: {fileID: 81340082578472405}
 --- !u!114 &114902187003244492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52137,8 +51653,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: selectParkLevel
+        m_TargetAssemblyTypeName: MainMenuHandler, Assembly-CSharp
+        m_MethodName: SelectParkLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -62843,10 +62359,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 4652088758036746}
   - {fileID: 4112532190725516}
-  - {fileID: 4376918013228700}
-  - {fileID: 4732672975353805}
   - {fileID: 397845742}
   - {fileID: 96616482}
   - {fileID: 224639596798698476}
   - {fileID: 1391746650}
   - {fileID: 1906073141}
+  - {fileID: 411013101}

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
+using Zenject;
 
 public class LevelModelHandler : MonoBehaviour {
 
@@ -12,18 +13,20 @@ public class LevelModelHandler : MonoBehaviour {
 	[FormerlySerializedAs("ShowObjective")] [Space(20)]
 	[SerializeField] private UnityEvent showObjective;
 
+	[Inject] private GameplayHandler _gameplayHandler;
+
 	public string PrimaryObjective => primaryObjective;
 
 	private void Start()
 	{
 		showObjective.Invoke();
-		GameplayHandler.Gsh.SetScaleOne();
+		_gameplayHandler.SetScaleOne();
 	}
 
 
 	public void ShowSecondaryObjective(int secondary)
     {
-		GameplayHandler.Gsh.SecondaryText.text = secondaryObjectives[secondary];
+		_gameplayHandler.SecondaryText.text = secondaryObjectives[secondary];
     }
 
 	public void ChangeMotherController()
