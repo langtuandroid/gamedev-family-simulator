@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 public class HandleLevels : MonoBehaviour
 {
@@ -31,6 +32,8 @@ public class HandleLevels : MonoBehaviour
     [Header("Level 14 Things")]
     [SerializeField] GameObject level14Cutscene;
 
+    [Inject] private SoundManager _soundManager;
+    
     void Start()
     {
         if (PlayerPrefs.GetInt("SelectedLevel") == 7)
@@ -80,7 +83,7 @@ public class HandleLevels : MonoBehaviour
     {
         if (bucketToys[0].activeSelf && bucketToys[1].activeSelf && bucketToys[2].activeSelf && bucketToys[3].activeSelf && bucketToys[4].activeSelf)
         {
-            this.GetComponent<LevelModel_Handler>().ShowSecondaryObjective(3);
+            this.GetComponent<LevelModelHandler>().ShowSecondaryObjective(3);
             path.SetActive(true);
         }
     }
@@ -139,16 +142,16 @@ public class HandleLevels : MonoBehaviour
     {
         if (temp == 0)
         {
-            if (SoundManager.Instance)
+            if (_soundManager)
             {
-                SoundManager.Instance.PlayGameplaySounds(0f);
+                _soundManager.PlayGameplaySounds(0f);
             }
         }
         else if (temp == 1)
         {
-            if (SoundManager.Instance)
+            if (_soundManager)
             {
-                SoundManager.Instance.PlayGameplaySounds(0.65f);
+                _soundManager.PlayGameplaySounds(0.65f);
             }
         }
     }

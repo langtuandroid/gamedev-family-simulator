@@ -1,20 +1,19 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TimerScript : MonoBehaviour {
 
-	public Text timerText;
-	public float time = 1200;
-	public bool stopTimer,stopSpinner;
+	[SerializeField] private Text timerText;
+	[SerializeField] private float time = 1200;
+	[SerializeField] private bool stopTimer,stopSpinner;
 
-	void Start ()
+	private void Start ()
 	{
 		StartCoroutine(StartCoundownTimer());
 	}
 
-	public IEnumerator StartCoundownTimer()
+	private IEnumerator StartCoundownTimer()
 	{
 		if (!stopTimer) {
 			time -= Time.deltaTime;
@@ -30,17 +29,17 @@ public class TimerScript : MonoBehaviour {
 		}
 	}
 
-	void LateUpdate()
+	private void LateUpdate()
 	{
 		if (time <= 0.5f && !stopTimer) {
 			stopTimer = true;
-			GameplayScript_Handler.gsh.rewardedAd.SetActive (true);
+			GameplayHandler.Gsh.RewardedAd.SetActive (true);
 		}
 		if (stopTimer) {
 			if(!stopSpinner)
-				GameplayScript_Handler.gsh.spinnerImage.fillAmount += 0.004f;
-			if (GameplayScript_Handler.gsh.spinnerImage.fillAmount > 0.99f) {
-				GameplayScript_Handler.gsh.levelFail_CompleteStatusEvent (false);
+				GameplayHandler.Gsh.SpinnerImage.fillAmount += 0.004f;
+			if (GameplayHandler.Gsh.SpinnerImage.fillAmount > 0.99f) {
+				GameplayHandler.Gsh.LevelFail_CompleteStatusEvent (false);
 				gameObject.SetActive (false);
 			}
 		}

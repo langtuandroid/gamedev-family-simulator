@@ -6,11 +6,10 @@ public class Demo : MonoBehaviour {
 
 	public GameObject internetPanel;
 	
-	
-	public static Demo instance;
+	private static Demo _instance;
     private void Start()
     {
-		instance = this;
+		_instance = this;
 
 		DontDestroyOnLoad(gameObject);
 		CheckInternet();

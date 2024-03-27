@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Inhouse.AdsIH.Scripts;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -21,7 +22,7 @@ public class DOYU : MonoBehaviour {
 			yield return new WaitForSeconds (1f);
 			time -= 1;
 		}
-		MoreAppsHandler.instance.StartCoroutine(MoreAppsHandler.instance.updateUI());
+		MoreAppsHandler.instance.StartCoroutine(MoreAppsHandler.instance.UpdateUI());
 		StartCoroutine (Timer());
 	}
 }

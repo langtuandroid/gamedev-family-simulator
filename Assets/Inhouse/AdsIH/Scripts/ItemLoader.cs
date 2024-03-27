@@ -1,21 +1,21 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
-namespace Area730.MoreAppsPage
+namespace Inhouse.AdsIH.Scripts
 {
     [AddComponentMenu("More Apps/Item Loader")]
     public class ItemLoader : MonoBehaviour
     {
-
         [System.Serializable]
         public class ItemElement
         {
-            public Sprite AppIcon;
-            public string AppName;
-            public string AppId;
+            [FormerlySerializedAs("AppIcon")] public Sprite appIcon;
+            [FormerlySerializedAs("AppName")] public string appName;
+            [FormerlySerializedAs("AppId")] public string appId;
         }
 
-        public ItemElement[] AndroidApps;
-        public ItemElement[] IosApps;
+        [FormerlySerializedAs("AndroidApps")] public ItemElement[] androidApps;
+        [FormerlySerializedAs("IosApps")] public ItemElement[] iosApps;
 
 
     }

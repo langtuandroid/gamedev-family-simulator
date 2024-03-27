@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5247,7 +5247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cf4307357b7c143830b5b4ac4ad9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnEnableEvent:
+  onEnableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1691281158}
@@ -5286,7 +5286,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnDisableEvent:
+  onDisableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 153806706}
@@ -16074,7 +16074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cf4307357b7c143830b5b4ac4ad9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnEnableEvent:
+  onEnableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1205614807}
@@ -16113,7 +16113,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnDisableEvent:
+  onDisableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 17161607}
@@ -22575,7 +22575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eb493b91e7c2a94fa972634413e24ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btnclick: {fileID: 8300000, guid: 572a22580f394449389ad43f580e1d8b, type: 3}
+  btnClick: {fileID: 0}
   timeCheck: 0
   configFileUrl: https://www.dropbox.com/s/hf6nzsnknfyxn0h/Inhouse%20Large_Scary%20Teacher_1.json?raw=1
 --- !u!114 &690393123
@@ -27205,7 +27205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cf4307357b7c143830b5b4ac4ad9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnEnableEvent:
+  onEnableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 544555174}
@@ -27244,7 +27244,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnDisableEvent:
+  onDisableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1335900993}
@@ -27429,7 +27429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cf4307357b7c143830b5b4ac4ad9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnEnableEvent:
+  onEnableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 731307122}
@@ -27468,7 +27468,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnDisableEvent:
+  onDisableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 154767449}
@@ -30932,7 +30932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cf4307357b7c143830b5b4ac4ad9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnEnableEvent:
+  onEnableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1932306664}
@@ -30971,7 +30971,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnDisableEvent:
+  onDisableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1026250308}
@@ -32029,7 +32029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cf4307357b7c143830b5b4ac4ad9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnEnableEvent:
+  onEnableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1339330137}
@@ -32068,7 +32068,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnDisableEvent:
+  onDisableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 791244106}
@@ -35263,7 +35263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cf4307357b7c143830b5b4ac4ad9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnEnableEvent:
+  onEnableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2105462443}
@@ -35302,7 +35302,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnDisableEvent:
+  onDisableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 571837557}
@@ -36083,7 +36083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cf4307357b7c143830b5b4ac4ad9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnEnableEvent:
+  onEnableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1303269551}
@@ -36122,7 +36122,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnDisableEvent:
+  onDisableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1319627385}
@@ -39892,7 +39892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cf4307357b7c143830b5b4ac4ad9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnEnableEvent:
+  onEnableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1547451453}
@@ -39931,7 +39931,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnDisableEvent:
+  onDisableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 415881003}
@@ -41257,12 +41257,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e05774b6662b6408d4bcd12b976800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adPosition: 4
-  width: 350
-  height: 250
-  OnActive: 0
-  OnDeactive: 1
-  inhouse: {fileID: 370192369}
 --- !u!1 &1243676647
 GameObject:
   m_ObjectHideFlags: 0
@@ -50118,7 +50112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cf4307357b7c143830b5b4ac4ad9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnEnableEvent:
+  onEnableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1232145920}
@@ -50157,7 +50151,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnDisableEvent:
+  onDisableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 107222896}
@@ -61760,7 +61754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cf4307357b7c143830b5b4ac4ad9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnEnableEvent:
+  onEnableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 408506021}
@@ -61799,7 +61793,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnDisableEvent:
+  onDisableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1516306135}
@@ -62336,11 +62330,9 @@ MonoBehaviour:
   - {fileID: 1067786848}
   - {fileID: 1095964687}
   audioSource: {fileID: 1066770907}
-  Rightclip: {fileID: 8300000, guid: 1f2a717bc2672394282399b8d463f560, type: 3}
-  Wrongclip: {fileID: 8300000, guid: e0026885cd1f3ff4db723ba4d2e5c52b, type: 3}
-  Players:
-  - {fileID: 7104160107571774369}
-  - {fileID: 804133154791545941}
+  rightClip: {fileID: 0}
+  wrongClip: {fileID: 0}
+  players: []
   activeModes:
   - {fileID: 873504825}
   - {fileID: 1941747784}
@@ -62360,13 +62352,13 @@ MonoBehaviour:
   loadingImage: {fileID: 1287767265}
   env: {fileID: 1356334250}
   resultPanel: {fileID: 1967308152}
-  correct_Text: {fileID: 1943150423}
-  wrong_Text: {fileID: 634517070}
-  total_Text: {fileID: 717283522}
-  total_M_Que: {fileID: 1546181300}
-  total_S_Que: {fileID: 1591460583}
-  total_C_Que: {fileID: 1166919515}
-  total_A_Que: {fileID: 289231094}
+  correctText: {fileID: 1943150423}
+  wrongText: {fileID: 0}
+  totalText: {fileID: 0}
+  totalMQue: {fileID: 0}
+  totalSQue: {fileID: 0}
+  totalCQue: {fileID: 0}
+  totalAQue: {fileID: 0}
   remarks:
   - {fileID: 1966951152}
   - {fileID: 1314195392}
@@ -65684,7 +65676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cf4307357b7c143830b5b4ac4ad9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnEnableEvent:
+  onEnableEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1699275440}
@@ -65783,7 +65775,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnDisableEvent:
+  onDisableEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &1970098454

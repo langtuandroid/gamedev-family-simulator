@@ -4,21 +4,20 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class Splash : MonoBehaviour
 {
-    public Image SplashImage;
-   
-    
+    [SerializeField] private Image splashImage;
+
     void Start()
     {
-        Loadscene();
+        LoadScene();
 
     }
 
-    public void Loadscene()
+    private void LoadScene()
     {
-        StartCoroutine(LoadScene());
+        StartCoroutine(LoadSceneCoroutine());
     }
 
-    IEnumerator LoadScene()
+    IEnumerator LoadSceneCoroutine()
     {
         yield return new WaitForSeconds(3f);
         SceneManager.LoadScene(1);

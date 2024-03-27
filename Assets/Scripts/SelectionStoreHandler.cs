@@ -1,75 +1,71 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
+using Zenject;
 
 public class SelectionStoreHandler : MonoBehaviour {
 
 	[Header("Objects to be Selected")]
-	public GameObject[] objectSelected;
-	public int currentSelected;
+	[SerializeField] private GameObject[] objectSelected;
+	[SerializeField] private int currentSelected;
+	
 	[Header("Assign Camera Looking At player")]
-	public GameObject cameraLookingAtPlayer;
+	[SerializeField] private GameObject cameraLookingAtPlayer;
+	
 	[Header("Left Right Button")]
-	public GameObject leftButton;
-	public GameObject rightButton;
+	[SerializeField] private GameObject leftButton;
+	[SerializeField] private GameObject rightButton;
 	
 	[Header("Girl Outfit")]
-	[SerializeField] GameObject[] customizePanel;
-	[SerializeField] Texture[] girlHair;
-	[SerializeField] Texture[] girlEyes;
-	[SerializeField] Texture[] girlDress;
-	[SerializeField] Texture[] fashion_Items;
-	[SerializeField] GameObject[] girlHairMeshes;
-	[SerializeField] GameObject[] girlEyeMeshes;
-	[SerializeField] GameObject girlDressMesh, girlHairBandMesh, girlRibbonMesh;
+	[SerializeField] private GameObject[] customizePanel;
+	[SerializeField] private Texture[] girlHair;
+	[SerializeField] private Texture[] girlEyes;
+	[SerializeField] private Texture[] girlDress;
+	[FormerlySerializedAs("fashion_Items")] [SerializeField] private Texture[] fashionItems;
+	[SerializeField] private GameObject[] girlHairMeshes;
+	[SerializeField] private GameObject[] girlEyeMeshes;
+	[SerializeField] private GameObject girlDressMesh, girlHairBandMesh, girlRibbonMesh;
+	
 	[Tooltip(" 1st material for Girl Hair, 2nd for Girl Eyes, 3rd for Girl Dress & 4th for Girl Hair Band & 7th for Girl Ribbon")]
-	[SerializeField] Material[] girlMaterials;
-	[SerializeField] GameObject[] girlButtons;
-	[SerializeField] GameObject buyPanel;
-	[SerializeField] GameObject notEnoughMoneyPanel;
-	int[] girlClothPrices = { 0, 150, 150, 150, 150, 150, 0, 100, 100, 100, 0, 400, 500, 600, 200, 200, 200, 200 };
-	string buttonName;
+	[SerializeField] private Material[] girlMaterials;
+	[SerializeField] private GameObject[] girlButtons;
+	[SerializeField] private GameObject buyPanel;
+	[SerializeField] private GameObject notEnoughMoneyPanel;
+	private readonly int[]  _girlClothPrices = { 0, 150, 150, 150, 150, 150, 0, 100, 100, 100, 0, 400, 500, 600, 200, 200, 200, 200 };
+	private string _buttonName;
 
 	[Header("Boy Outfit")]
-	[SerializeField] GameObject boyHairMesh01;
-	[SerializeField] GameObject boyHairMesh02;
-	[SerializeField] Texture[] boyHair;
-	[SerializeField] GameObject boyLeftEye, boyRightEye;
-	[SerializeField] Texture[] boyEyes;
-	[SerializeField] GameObject[] boyButtons;
-	[SerializeField] Material[] boyMaterials;
-	int[] boyClothPrices = { 0, 150, 150, 150, 0, 100, 100, 100 };
+	[SerializeField] private GameObject boyHairMesh01;
+	[SerializeField] private GameObject boyHairMesh02;
+	[SerializeField] private Texture[] boyHair;
+	[SerializeField] private GameObject boyLeftEye, boyRightEye;
+	[SerializeField] private Texture[] boyEyes;
+	[SerializeField] private GameObject[] boyButtons;
+	[SerializeField] private Material[] boyMaterials;
+	private readonly int[]  _boyClothPrices = { 0, 150, 150, 150, 0, 100, 100, 100 };
 
 	[Header("Mother Outfit")]
-	[SerializeField] GameObject mother;
-	[SerializeField] Texture[] motherHair;
-	[SerializeField] Texture[] motherEyes;
-	[SerializeField] Texture[] motherDress;
+	[SerializeField] private GameObject mother;
+	[SerializeField] private Texture[] motherHair;
+	[SerializeField] private Texture[] motherEyes;
+	[SerializeField] private Texture[] motherDress;
+	
 	[Tooltip("1st Material for Eye, 2nd for Hair & 3rd for Dress")]
-	[SerializeField] Material[] motherMaterials;
-	[SerializeField] GameObject[] motherButtons;
-	int[] motherClothPrices = { 0, 150, 150, 150, 0, 100, 100, 100, 0, 400, 500, 600 };
+	[SerializeField] private Material[] motherMaterials;
+	[SerializeField] private GameObject[] motherButtons;
+	
+	private readonly int[] _motherClothPrices = { 0, 150, 150, 150, 0, 100, 100, 100, 0, 400, 500, 600 };
 
-	void Start()
+	[Inject] private MainMenuHandler _mainMenuHandler;
+	[Inject] private StoreHandler _storeHandler;
+	
+	private void Start()
 	{
 		CheckUnlockedCostumeItems();
-		//for (int i = 0; i < 8; i++)
-		//{
-		//	Debug.Log("This Value of Button " + i + " is " + PlayerPrefs.GetInt("UnlockedBoyItems" + i) + "\n");
-		//}for (int i = 0; i < 18; i++)
-		//{
-		//	Debug.Log("This Value of Button " + i + " is " + PlayerPrefs.GetInt("UnlockedGirlItems" + i) + "\n");
-		//}for (int i = 0; i < 12; i++)
-		//{
-		//	Debug.Log("This Value of Button " + i + " is " + PlayerPrefs.GetInt("UnlockedMotherItems" + i) + "\n");
-		//}
-		delayedLeftRightState();
+		DelayedLeftRightState();
 	}
 
-	void delayedLeftRightState()
+	private void DelayedLeftRightState()
 	{
 		if (currentSelected < objectSelected.Length - 1) {
 			leftButton.SetActive (true);
@@ -132,7 +128,7 @@ public class SelectionStoreHandler : MonoBehaviour {
 		}
     }
 
-	public void leftRightState(bool temp)
+	public void LeftRightState(bool temp)
 	{
 		objectSelected [currentSelected].SetActive (false);
 		customizePanel[currentSelected].SetActive(false);
@@ -140,17 +136,19 @@ public class SelectionStoreHandler : MonoBehaviour {
 			currentSelected++;
 			
 		}
-		else if (!temp) {
+		else
+		{
 			currentSelected--;
 			
 		}
-		delayedLeftRightState();
+
+		DelayedLeftRightState();
 		objectSelected [currentSelected].SetActive (true);
 		customizePanel[currentSelected].SetActive(true);
 		//		iTween.MoveTo (cameraLookingAtPlayer,new Vector3(objectSelected[currentSelected].transform.position.x,1,-3),3f);
 	}
 
-	//Girl Customiztion...
+	//Girl Customization...
 	public void ChangeGirlHair(int gh)
     {
         for (int i = 0; i < girlHair.Length; i++)
@@ -160,7 +158,7 @@ public class SelectionStoreHandler : MonoBehaviour {
                 if (girlButtons[i].transform.GetChild(1).transform.gameObject.activeSelf)
                 {
 					buyPanel.SetActive(true);
-					buttonName = EventSystem.current.currentSelectedGameObject.name;
+					_buttonName = EventSystem.current.currentSelectedGameObject.name;
 					//Debug.Log("If Part... " + gh + "  " + buttonName);
 					if (i < 3)
                     {
@@ -206,7 +204,7 @@ public class SelectionStoreHandler : MonoBehaviour {
 				if (girlButtons[i + 6].transform.GetChild(1).transform.gameObject.activeSelf)
 				{
 					buyPanel.SetActive(true);
-					buttonName = EventSystem.current.currentSelectedGameObject.name;
+					_buttonName = EventSystem.current.currentSelectedGameObject.name;
 					//Debug.Log("If Part... " + ge + "  " + buttonName);
 					girlEyeMeshes[0].GetComponent<Renderer>().material.mainTexture = boyEyes[i];
 					girlEyeMeshes[1].GetComponent<Renderer>().material.mainTexture = boyEyes[i];
@@ -233,7 +231,7 @@ public class SelectionStoreHandler : MonoBehaviour {
 				if (girlButtons[i + 10].transform.GetChild(1).transform.gameObject.activeSelf)
 				{
 					buyPanel.SetActive(true);
-					buttonName = EventSystem.current.currentSelectedGameObject.name;
+					_buttonName = EventSystem.current.currentSelectedGameObject.name;
 					//Debug.Log("If Part... " + gd + "  " + buttonName);
 					girlDressMesh.GetComponent<Renderer>().material.mainTexture = girlDress[i];
 				}
@@ -249,22 +247,22 @@ public class SelectionStoreHandler : MonoBehaviour {
     }
 	public void ChangeGirlFashion_Items(int f)
     {
-        for (int i = 0; i < fashion_Items.Length; i++)
+        for (int i = 0; i < fashionItems.Length; i++)
         {
             if (i == f)
             {
 				if (girlButtons[i + 14].transform.GetChild(1).transform.gameObject.activeSelf)
 				{
 					buyPanel.SetActive(true);
-					buttonName = EventSystem.current.currentSelectedGameObject.name;
+					_buttonName = EventSystem.current.currentSelectedGameObject.name;
 					//Debug.Log("If Part... " + f + "  " + buttonName);
 					if (i < 2)
                     {
-						girlHairBandMesh.GetComponent<Renderer>().material.mainTexture = fashion_Items[i];
+						girlHairBandMesh.GetComponent<Renderer>().material.mainTexture = fashionItems[i];
                     }
                     else
                     {
-						girlRibbonMesh.GetComponent<Renderer>().material.mainTexture = fashion_Items[i];
+						girlRibbonMesh.GetComponent<Renderer>().material.mainTexture = fashionItems[i];
 					}
 				}
 				else
@@ -275,22 +273,22 @@ public class SelectionStoreHandler : MonoBehaviour {
 					{
 						PlayerPrefs.SetInt("HairBand", 1);
 						PlayerPrefs.SetInt("Ribbon", 0);
-						girlHairBandMesh.GetComponent<Renderer>().material.mainTexture = fashion_Items[i];
-						girlMaterials[4].mainTexture = fashion_Items[i];
+						girlHairBandMesh.GetComponent<Renderer>().material.mainTexture = fashionItems[i];
+						girlMaterials[4].mainTexture = fashionItems[i];
 					}
 					else
 					{
 						PlayerPrefs.SetInt("HairBand", 0);
 						PlayerPrefs.SetInt("Ribbon", 1);
-						girlRibbonMesh.GetComponent<Renderer>().material.mainTexture = fashion_Items[i];
-						girlMaterials[5].mainTexture = fashion_Items[i];
+						girlRibbonMesh.GetComponent<Renderer>().material.mainTexture = fashionItems[i];
+						girlMaterials[5].mainTexture = fashionItems[i];
 					}
 				}
 			}
         }
     }
 
-	//Boy Customiztion
+	//Boy Customization
 	public void ChangeBoyHair(int bh)
     {
         for (int i = 0; i < boyHair.Length; i++)
@@ -300,7 +298,7 @@ public class SelectionStoreHandler : MonoBehaviour {
 				if (boyButtons[i].transform.GetChild(1).transform.gameObject.activeSelf)
 				{
 					buyPanel.SetActive(true);
-					buttonName = EventSystem.current.currentSelectedGameObject.name;
+					_buttonName = EventSystem.current.currentSelectedGameObject.name;
 					//Debug.Log("If Part... " + bh + "  " + buttonName);
 					boyHairMesh01.GetComponent<Renderer>().material.mainTexture = boyHair[i];
 					boyHairMesh02.GetComponent<Renderer>().material.mainTexture = boyHair[i];
@@ -325,7 +323,7 @@ public class SelectionStoreHandler : MonoBehaviour {
 				if (boyButtons[i + 4].transform.GetChild(1).transform.gameObject.activeSelf)
 				{
 					buyPanel.SetActive(true);
-					buttonName = EventSystem.current.currentSelectedGameObject.name;
+					_buttonName = EventSystem.current.currentSelectedGameObject.name;
 					//Debug.Log("If Part... " + be + "  " + buttonName);
 					boyLeftEye.GetComponent<Renderer>().material.mainTexture = boyEyes[i];
 					boyRightEye.GetComponent<Renderer>().material.mainTexture = boyEyes[i];
@@ -353,7 +351,7 @@ public class SelectionStoreHandler : MonoBehaviour {
 				if (motherButtons[i].transform.GetChild(1).gameObject.activeSelf)
 				{
                     buyPanel.SetActive(true);
-                    buttonName = EventSystem.current.currentSelectedGameObject.name;
+                    _buttonName = EventSystem.current.currentSelectedGameObject.name;
                     //Debug.Log("If Part... " + mh + "  " + buttonName);
 					mother.transform.GetChild(0).transform.GetChild(0).GetComponent<Renderer>().materials[1].mainTexture = motherHair[i];
                 }
@@ -376,7 +374,7 @@ public class SelectionStoreHandler : MonoBehaviour {
 				if (motherButtons[i + 4].transform.GetChild(1).gameObject.activeSelf) 
 				{
 					buyPanel.SetActive(true);
-					buttonName = EventSystem.current.currentSelectedGameObject.name;
+					_buttonName = EventSystem.current.currentSelectedGameObject.name;
 					//Debug.Log("If Part... " + me + "  " + buttonName);
 					mother.transform.GetChild(0).transform.GetChild(0).GetComponent<Renderer>().materials[0].mainTexture = motherEyes[i];
 				}
@@ -399,7 +397,7 @@ public class SelectionStoreHandler : MonoBehaviour {
 				if (motherButtons[i + 8].transform.GetChild(1).gameObject.activeSelf)
 				{
 					buyPanel.SetActive(true);
-					buttonName = EventSystem.current.currentSelectedGameObject.name;
+					_buttonName = EventSystem.current.currentSelectedGameObject.name;
 					//Debug.Log("If Part... " + md + "  " + buttonName);
 					mother.transform.GetChild(0).transform.GetChild(0).GetComponent<Renderer>().materials[2].mainTexture = motherDress[i];
 					mother.transform.GetChild(0).transform.GetChild(0).GetComponent<Renderer>().materials[3].mainTexture = motherDress[i];
@@ -425,16 +423,16 @@ public class SelectionStoreHandler : MonoBehaviour {
         {
 			for (int i = 0; i < girlButtons.Length; i++)
 			{
-				if (buttonName == girlButtons[i].name)
+				if (_buttonName == girlButtons[i].name)
 				{
-					if (StoreScriptHandler.storeScript && StoreScriptHandler.storeScript.getTotalEarnedCoins() >= girlClothPrices[i])
+					if (_storeHandler && _storeHandler.GetTotalEarnedCoins() >= _girlClothPrices[i])
 					{
-						StoreScriptHandler.storeScript.setTotalEarnedCoins(StoreScriptHandler.storeScript.getTotalEarnedCoins() - girlClothPrices[i]);
+						_storeHandler.SetTotalEarnedCoins(_storeHandler.GetTotalEarnedCoins() - _girlClothPrices[i]);
 						//Debug.Log("Successfully Purchased...");
 						girlButtons[i].transform.GetChild(1).gameObject.SetActive(false);
 						PlayerPrefs.SetInt("UnlockedGirlItems" + i, 1);
 						buyPanel.SetActive(false);
-						MainMenuScriptHandler.mmsh.updateCoins();
+						_mainMenuHandler.UpdateCoins();
 					}
 					else
 					{
@@ -450,16 +448,16 @@ public class SelectionStoreHandler : MonoBehaviour {
         {
 			for (int i = 0; i < boyButtons.Length; i++)
 			{
-				if (buttonName == boyButtons[i].name)
+				if (_buttonName == boyButtons[i].name)
 				{
-					if (StoreScriptHandler.storeScript && StoreScriptHandler.storeScript.getTotalEarnedCoins() >= boyClothPrices[i])
+					if (_storeHandler && _storeHandler.GetTotalEarnedCoins() >= _boyClothPrices[i])
 					{
-						StoreScriptHandler.storeScript.setTotalEarnedCoins(StoreScriptHandler.storeScript.getTotalEarnedCoins() - boyClothPrices[i]);
+						_storeHandler.SetTotalEarnedCoins(_storeHandler.GetTotalEarnedCoins() - _boyClothPrices[i]);
 						//Debug.Log("Successfully Purchased...");
 						boyButtons[i].transform.GetChild(1).gameObject.SetActive(false);
 						PlayerPrefs.SetInt("UnlockedBoyItems" + i, 1);
 						buyPanel.SetActive(false);
-						MainMenuScriptHandler.mmsh.updateCoins();
+						_mainMenuHandler.UpdateCoins();
 					}
 					else
 					{
@@ -475,16 +473,16 @@ public class SelectionStoreHandler : MonoBehaviour {
         {
 			for (int i = 0; i < motherButtons.Length; i++)
 			{
-				if (buttonName == motherButtons[i].name)
+				if (_buttonName == motherButtons[i].name)
 				{
-					if (StoreScriptHandler.storeScript && StoreScriptHandler.storeScript.getTotalEarnedCoins() >= motherClothPrices[i])
+					if (_storeHandler && _storeHandler.GetTotalEarnedCoins() >= _motherClothPrices[i])
 					{
-						StoreScriptHandler.storeScript.setTotalEarnedCoins(StoreScriptHandler.storeScript.getTotalEarnedCoins() - motherClothPrices[i]);
+						_storeHandler.SetTotalEarnedCoins(_storeHandler.GetTotalEarnedCoins() - _motherClothPrices[i]);
 						//Debug.Log("Successfully Purchased...");
 						motherButtons[i].transform.GetChild(1).gameObject.SetActive(false);
 						PlayerPrefs.SetInt("UnlockedMotherItems" + i, 1);
 						buyPanel.SetActive(false);
-						MainMenuScriptHandler.mmsh.updateCoins();
+						_mainMenuHandler.UpdateCoins();
 					}
 					else
 					{

@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class MainMenuIH : MonoBehaviour {
 
-	void Start(){
+	private void Start(){
 		#if UNITY_IOS
 		Invoke ("ShowRNow",2.5f);
 		#endif
 	}
-
-
 	
-	void OnDisable () {
+	private void OnDisable () {
 
 		GameObject.Find("2").transform.GetChild(1).gameObject.SetActive(false);
 		GameObject.Find("2").transform.GetChild(2).gameObject.SetActive(false);

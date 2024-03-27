@@ -1,30 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class EnableAndDisable : MonoBehaviour
 {
-
-    public UnityEvent OnEnableEvent;
-    public UnityEvent OnDisableEvent;
-
-
-
+    [FormerlySerializedAs("OnEnableEvent")] public UnityEvent onEnableEvent;
+    [FormerlySerializedAs("OnDisableEvent")] public UnityEvent onDisableEvent;
+    
     void OnEnable()
     {
-        if (OnEnableEvent != null)
+        if (onEnableEvent != null)
         {
-            OnEnableEvent.Invoke();
+            onEnableEvent.Invoke();
             Debug.Log("GameObject Enabled");
         }
     }
 
     private void OnDisable()
     {
-        if (OnDisableEvent != null)
+        if (onDisableEvent != null)
         {
-            OnDisableEvent.Invoke();
+            onDisableEvent.Invoke();
             Debug.Log("Game Object Disabled");
         }
 

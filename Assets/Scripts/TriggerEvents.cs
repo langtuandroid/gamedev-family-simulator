@@ -1,18 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.UI;
 
 public class TriggerEvents : MonoBehaviour
 {
-   
-    public string tagName;
-    public bool isCollision;
-    public UnityEvent onTriggerEnter;
-    public UnityEvent onTriggerExit;
-    //public UnityEngine.Events.UnityEvent onTriggerStay;
-    
+    [SerializeField] private string tagName;
+    [SerializeField] private bool isCollision;
+    [SerializeField] private UnityEvent onTriggerEnter;
+    [SerializeField] private UnityEvent onTriggerExit;
+
     private void OnTriggerEnter(Collider other)
     {
         if (!isCollision)
@@ -55,7 +50,7 @@ public class TriggerEvents : MonoBehaviour
     {
         if (isCollision)
         {
-            if (collision.gameObject.tag == tagName)
+            if (collision.gameObject.CompareTag(tagName))
             {
                 onTriggerEnter.Invoke();
             }
@@ -67,7 +62,7 @@ public class TriggerEvents : MonoBehaviour
     {
         if (isCollision)
         {
-            if (collision.gameObject.tag == tagName)
+            if (collision.gameObject.CompareTag(tagName))
             {
                 onTriggerExit.Invoke();
             }

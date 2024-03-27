@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace Area730.MoreAppsPage
+namespace Inhouse.AdsIH.Scripts
 {
 
     public class ItemView : MonoBehaviour

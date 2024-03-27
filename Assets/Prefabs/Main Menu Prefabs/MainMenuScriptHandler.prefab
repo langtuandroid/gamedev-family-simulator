@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4112532421970988}
-  - component: {fileID: 114025438355993190}
+  - component: {fileID: 4179891568775042709}
   m_Layer: 0
   m_Name: MainMenuScriptHandler
   m_TagString: Untagged
@@ -24,14 +24,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1721425378107886}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114025438355993190
+--- !u!114 &4179891568775042709
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,46 +41,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 1721425378107886}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 951e57e761d0f4d97b5d1668f767649d, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ab996b6c3aee684aa35a3a085d20717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Consent: {fileID: 0}
-  ConsentImage: {fileID: 0}
-  ConsentSprites:
-  - {fileID: 21300000, guid: c3a34e3754c95ad46be31558b1a2aaba, type: 3}
-  - {fileID: 21300000, guid: 8d4b5db807cbb54488ad5e2dcca49947, type: 3}
-  - {fileID: 21300000, guid: d7c468f8d0b6c9b41ba9605e89347b01, type: 3}
-  - {fileID: 21300000, guid: 498ce9f86ac5dc64ba15db2945148f48, type: 3}
-  - {fileID: 21300000, guid: 2598668f79b943e48a342472532536d3, type: 3}
-  loadingImage: {fileID: 0}
-  loadingDelayTime: 10
-  mainMenu: {fileID: 0}
-  settingsDialoug: {fileID: 0}
-  RemoveAdsBtns:
-  - {fileID: 0}
-  - {fileID: 0}
-  unlockAllButton:
-  - {fileID: 0}
-  - {fileID: 0}
-  unlockAllChars:
-  - {fileID: 0}
-  - {fileID: 0}
-  UnlockEveryThing: {fileID: 0}
-  Shop: {fileID: 0}
+  isLoading: 0
+  logo: {fileID: 0}
+  loadingImages: []
+  loadingBar: {fileID: 0}
+  loadingText: {fileID: 0}
+  loadingPanel: {fileID: 0}
+  loadingDelayTime: 0
+  mainMenuPanel: {fileID: 0}
+  modeSelectionPanel: {fileID: 0}
+  customizationPanel: {fileID: 0}
+  learningModePanel: {fileID: 0}
+  scroll: []
+  parkLevelSelection: {fileID: 0}
+  houseLevelSelection: {fileID: 0}
+  shopPanel: {fileID: 0}
   soundButton: {fileID: 0}
-  soundOn: {fileID: 21300000, guid: 0b71d33398f4f304993e9872936c9f17, type: 3}
-  SoundOff: {fileID: 21300000, guid: 9da5dcb6870ce21488b78bf6e1fef31b, type: 3}
-  levelSelection: {fileID: 0}
-  levelsParent: {fileID: 0}
-  Levels: []
-  totalLevelsUnlocked: 0
-  selectionScene: {fileID: 0}
-  UserCoins:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  coinstoadd: 50
+  soundOn: {fileID: 0}
+  soundOff: {fileID: 0}
+  parkLevelsParent: {fileID: 0}
+  parkLevels: []
+  houseLevelsParent: {fileID: 0}
+  houseLevels: []
+  totalParkLevelsUnlocked: 0
+  totalHouseLevelsUnlocked: 0
+  userCoins: []
+  coinsToAdd: 0
   selectionStoreHandler: {fileID: 0}
-  isLoading: 1
-  LoadingBar: {fileID: 0}
-  clearData: 1
+  removeAdsButton: {fileID: 0}
+  unlockLevelsButton: {fileID: 0}
+  unlockCostumesButton: {fileID: 0}
+  unlockEverythingButton: {fileID: 0}

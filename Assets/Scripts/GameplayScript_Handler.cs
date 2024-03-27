@@ -1,133 +1,150 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Invector.vCamera;
 using Invector;
-//using Facebook.Unity;
+using UnityEngine.Serialization;
+using Zenject;
 
-public class GameplayScript_Handler : MonoBehaviour {
+public class GameplayHandler : MonoBehaviour {
 
-    public bool isTesting;
-    public int testingLevel;
+    [SerializeField] private bool isTesting;
+    [SerializeField] private int testingLevel;
+    
     [Header("On Scene Load Setting")]
-    [SerializeField] GameObject env;
+    [SerializeField] private GameObject env;
     [Space(5)]
-    [SerializeField] GameObject hair01, g02Hair01, g03Hair01;
+    [SerializeField] private GameObject hair01, g02Hair01, g03Hair01;
     [Space(5)]
-    [SerializeField] GameObject hair02, g02Hair02, g03Hair02;
+    [SerializeField] private GameObject hair02, g02Hair02, g03Hair02;
     [Space(5)]
-    [SerializeField] GameObject hairBand, g02HairBand, g03HairBand;
+    [SerializeField] private GameObject hairBand, g02HairBand, g03HairBand;
+    
+    [FormerlySerializedAs("Ribbon")]
     [Space(5)]
-    [SerializeField] GameObject Ribbon, g02Ribbon, g03Ribbon;
+    [SerializeField] private GameObject ribbon;
+
+    [Space(5)]
+    [SerializeField] private GameObject g02Ribbon, g03Ribbon;
+
     [Space(10)]
-    [SerializeField] vThirdPersonCamera motherCamera;
-    [SerializeField] vThirdPersonCamera childCamera;
-    [SerializeField] GameObject fadeImage;
-    [SerializeField] vThirdPersonCameraListData childList;
-    [SerializeField] GameObject vUI;
-    [SerializeField] Button skipButton;
-    [Header("Objective Dialoug Screen")]
-    public GameObject objDialoug;
-    public Text objText,secondaryText;
+    [SerializeField] private vThirdPersonCamera motherCamera;
+    [SerializeField] private vThirdPersonCamera childCamera;
+    [SerializeField] private GameObject fadeImage;
+    [SerializeField] private vThirdPersonCameraListData childList;
+    [SerializeField] private GameObject vUI;
+    [SerializeField] private Button skipButton;
+    
+    [Header("Objective Dialog Screen")]
+    [SerializeField] private GameObject objDialog;
+    [SerializeField] private Text objText,secondaryText;
+    
     [Header("Gameplay Buttons")]
     public GameObject[] gpButtons;
+    
     [Header("Loading Screen")]
-    public GameObject loadingScreen;
-    public Sprite[] loadingBackgrounds;
-    public float loadingScreenDisplayTime;
-    public Image LoadingImage;
-    public bool Isloading;
-    public Text loading_Text;
+    [SerializeField] private GameObject loadingScreen;
+    [SerializeField] private Sprite[] loadingBackgrounds;
+    [SerializeField] private float loadingScreenDisplayTime;
+    [SerializeField] private Image loadingImage;
+    [SerializeField] private bool isLoading;
+    [SerializeField] private Text loadingText;
+    
     [Header("Level Pause Screen")]
-    public GameObject pauseScreen;
+    [SerializeField] private GameObject pauseScreen;
+    
     [Header("Level Failed Screen")]
-    public GameObject failedScreen;
+    [SerializeField] private GameObject failedScreen;
+    
     [Header("Level Complete Screen")]
-    public GameObject completeScreen;
+    [SerializeField] private GameObject completeScreen;
 
     [Header("Assign ind. level prefab.")]
-    public GameObject levelsParent;
-    public GameObject[] Levels;
+    [SerializeField] private GameObject levelsParent;
+    [SerializeField] private GameObject[] Levels;
 
-    [Header("Other Varaibles")]
-    bool displayAdOnce, primaryObjectives;
-    [SerializeField]
-    bool levelCompleteTest, levelFailedTest;
-    public int selectedLevel, unlockedLevel;
-    public GameObject skipCutScene;
-    public Text totalCoinsEarned, timerText, coinText;
-    GameObject spawnedLevel;
-    LevelModel_Handler currentLevelModel;
-    int totalCoins;
+    [Header("Other Variables")]
+    private bool _displayAdOnce, _primaryObjectives;
+    
+    [SerializeField] bool levelCompleteTest, levelFailedTest;
+    [SerializeField] private int selectedLevel, unlockedLevel;
+    [SerializeField] private GameObject skipCutScene;
+    
+    [SerializeField] private Text totalCoinsEarned, timerText, coinText;
+    [SerializeField] private GameObject spawnedLevel;
+    
+    [SerializeField] private LevelModelHandler currentLevelModel;
+    
+    private int _totalCoins;
+    
     [Header("Rewarded Ad - Timer")]
-    public GameObject rewardedAd;
-    public Image spinnerImage;
-    public float timeToBeAlotedAfterRewardedVideo;
-
-    //[Header("Cut Scenes...")]
-    //[SerializeField] GameObject[] levelCutScenes; 
+    [SerializeField] private GameObject rewardedAd;
+    [SerializeField] private Image spinnerImage;
+    [SerializeField] private float timeToBeLootedAfterRewardedVideo;
+    
     // ----------- Static Ref. of GamePlay Script Handler Start------------//
-    public static GameplayScript_Handler gsh;
+    public static GameplayHandler Gsh;
     // ----------- Static Ref. of GamePlay Script Handler End------------//
     
+    [Inject] private SoundManager _soundManager;
+    [Inject] private StoreHandler _storeHandler;
+
+    public GameObject RewardedAd => rewardedAd;
+    public Image SpinnerImage => spinnerImage;
+
+    public Text SecondaryText => secondaryText;
+
     void Awake()
     {
         Time.timeScale = 1f;
-        if (gsh == null) {
-            gsh = this;
+        if (Gsh == null) {
+            Gsh = this;
         }
-        hideButtons();
+        HideButtons();
     }
 
-    void Start()
+    private void Start()
     {
-        // if (AdsManager_ZL.instance)
-        // {
-        //     AdsManager_ZL.instance.CallInterstitialAd(Adspref.Menu);
-        // }
         if (isTesting)
         {
             PlayerPrefs.SetInt("SelectedLevel", testingLevel);
         }
 
         env.SetActive(true);
-        if (SoundManager.Instance) {
-            SoundManager.Instance.PlayGameplaySounds(0.65f);
+        if (_soundManager) {
+            _soundManager.PlayGameplaySounds(0.65f);
         }
         if (PlayerPrefs.GetInt("ComingFromGP", 0) == 0) {
             PlayerPrefs.SetInt("ComingFromGP", 1);
         }
-        spawnLevel();
+        SpawnLevel();
         //StartCoroutine(loadingScreenHandler());
 
-        if (StoreScriptHandler.storeScript)
+        if (_storeHandler)
         {
-            
-            totalCoins = StoreScriptHandler.storeScript.getTotalEarnedCoins();
-            //coinText.text = totalCoins.ToString();
-            if (StoreScriptHandler.storeScript.getTotalEarnedCoins() < 300)
+            _totalCoins = _storeHandler.GetTotalEarnedCoins();
+            if (_storeHandler.GetTotalEarnedCoins() < 300)
             {
                 skipButton.interactable = false;
             }
         }
-        ObjectiveDialoug();
+        ObjectiveDialog();
        
     }
    
-    void OnStart()
+    private void OnStart()
     {
         //Active Fashion Meshes based on Selection
         if (PlayerPrefs.GetInt("HairBand") == 1)
         {
             hairBand.SetActive(true); g02HairBand.SetActive(true); g03HairBand.SetActive(true);
-            Ribbon.SetActive(false); g02Ribbon.SetActive(false); g03Ribbon.SetActive(false);
+            ribbon.SetActive(false); g02Ribbon.SetActive(false); g03Ribbon.SetActive(false);
         }
         else if (PlayerPrefs.GetInt("Ribbon") == 1)
         {
             hairBand.SetActive(false); g02HairBand.SetActive(false); g03HairBand.SetActive(false);
-            Ribbon.SetActive(true); g02Ribbon.SetActive(true); g03Ribbon.SetActive(true);
+            ribbon.SetActive(true); g02Ribbon.SetActive(true); g03Ribbon.SetActive(true);
         }
 
         //Active Hair Meshes based on Selection
@@ -142,11 +159,12 @@ public class GameplayScript_Handler : MonoBehaviour {
             hair02.SetActive(true); g02Hair02.SetActive(true); g02Hair02.SetActive(true);
         }
     }
-    public void AddDiamonds(int diamond)
+
+    private void AddDiamonds(int diamond)
     {
-        if (StoreScriptHandler.storeScript)
+        if (_storeHandler)
         {
-            StoreScriptHandler.storeScript.setTotalEarnedCoins(StoreScriptHandler.storeScript.getTotalEarnedCoins() + diamond);
+            _storeHandler.SetTotalEarnedCoins(_storeHandler.GetTotalEarnedCoins() + diamond);
         }
     }
     public void ChangePlayer()
@@ -154,7 +172,7 @@ public class GameplayScript_Handler : MonoBehaviour {
         StartCoroutine(FadeImageDelay());
     }
 
-    IEnumerator FadeImageDelay()
+    private IEnumerator FadeImageDelay()
     {
         motherCamera.gameObject.SetActive(false);
         childCamera.gameObject.SetActive(true);
@@ -169,7 +187,7 @@ public class GameplayScript_Handler : MonoBehaviour {
     {
         vUI.transform.localScale = new Vector3(1, 1, 1);
     }
-    void spawnLevel()
+    private void SpawnLevel()
     {
         Levels = new GameObject[levelsParent.transform.childCount];
         for (int i = 0; i < Levels.Length; i++)
@@ -181,7 +199,7 @@ public class GameplayScript_Handler : MonoBehaviour {
             selectedLevel = PlayerPrefs.GetInt("SelectedLevel");
             unlockedLevel = PlayerPrefs.GetInt("TotalLevelsUnlocked");
             Levels[selectedLevel].SetActive(true);
-            currentLevelModel = Levels[selectedLevel].GetComponent<LevelModel_Handler>();
+            currentLevelModel = Levels[selectedLevel].GetComponent<LevelModelHandler>();
 
         }
         else if (PlayerPrefs.GetInt("SelectedMode") == 1)
@@ -189,7 +207,7 @@ public class GameplayScript_Handler : MonoBehaviour {
             selectedLevel = PlayerPrefs.GetInt("SelectedHouseLevel");
             unlockedLevel = PlayerPrefs.GetInt("TotalHouseLevelsUnlocked");
             Levels[selectedLevel].SetActive(true);
-            currentLevelModel = Levels[selectedLevel].GetComponent<LevelModel_Handler>();
+            currentLevelModel = Levels[selectedLevel].GetComponent<LevelModelHandler>();
         }
        
     }
@@ -197,27 +215,27 @@ public class GameplayScript_Handler : MonoBehaviour {
     void LateUpdate()
     {
         if (Input.GetKeyDown(KeyCode.Escape)) {
-            pauseGameDialoug();
+            PauseGameDialog();
         }
 
 #if UNITY_EDITOR
         if (levelCompleteTest) {
             levelCompleteTest = false;
-            levelCompleteDialoug();
+            LevelCompleteDialog();
         }
         if (levelFailedTest) {
             levelFailedTest = false;
-            levelFailedDialoug();
+            LevelFailedDialog();
         }
 #endif
     }
 
-    public LevelModel_Handler returnLevelModelHandler()
+    public LevelModelHandler ReturnLevelModelHandler()
     {
         return currentLevelModel;
     }
 
-    IEnumerator loadingScreenHandler()
+    private IEnumerator LoadingScreenHandler()
     {
         int temp = Random.Range(0, loadingBackgrounds.Length);
         loadingScreen.SetActive(true);
@@ -236,134 +254,96 @@ public class GameplayScript_Handler : MonoBehaviour {
     }
     private void FixedUpdate()
     {
-        if (Isloading)
+        if (isLoading)
         {
-            LoadingImage.fillAmount += 0.003f;
-            if (LoadingImage.fillAmount==1)
+            loadingImage.fillAmount += 0.003f;
+            if (loadingImage.fillAmount == 1f)
             {
-                Isloading = false;
+                isLoading = false;
             }
         }
     }
-    public void ObjectiveDialoug()
+
+    private void ObjectiveDialog()
     {
-        if (!primaryObjectives) {
-            primaryObjectives = true;
-            objDialoug.SetActive(true);
-            objText.text = currentLevelModel.primaryObjective;
+        if (!_primaryObjectives) {
+            _primaryObjectives = true;
+            objDialog.SetActive(true);
+            objText.text = currentLevelModel.PrimaryObjective;
         }
     }
 
-    public void playButtonSound()
+    public void PlayButtonSound()
     {
-        if (SoundManager.Instance) {
-            SoundManager.Instance.PlayButtonClickSound();
+        if (_soundManager) {
+            _soundManager.PlayButtonClickSound();
         }
     }
 
-    public void skipButtonPressed()
+    public void SkipButtonPressed()
     {
-        if (SoundManager.Instance) {
-            SoundManager.Instance.PlayButtonClickSound();
+        if (_soundManager) {
+            _soundManager.PlayButtonClickSound();
         }
         //currentLevelModel.skipCutScene = true;
     }
 
-    public void hideButtons()
+    public void HideButtons()
     {
-        for (int i = 0; i < gpButtons.Length; i++) {
-            gpButtons[i].SetActive(false);
+        foreach (var t in gpButtons)
+        {
+            t.SetActive(false);
         }
     }
 
-    public void showButtons()
+    public void ShowButtons()
     {
-        for (int i = 0; i < gpButtons.Length; i++) {
-            gpButtons[i].SetActive(true);
+        foreach (var t in gpButtons)
+        {
+            t.SetActive(true);
         }
     }
 
-    public void displayTimerScript()
+    public void DisplayTimerScript()
     {
         //returnLevelModelHandler().timerScript.gameObject.SetActive(true);
     }
+    
 
-    //public void ShowRewardedVideo()
-    //{
-    //    if (AdsManager.adsManager)
-    //    {
-    //        AdsManager.adsManager.Admob_Reward_Video_Show();
-    //    }
-    //}
-    //void OnEnable()
-    //{
-    //    if (AdsManager.adsManager)
-    //        AdsManager.onRewardedAdShown += HandleonRewardedVideoViewedSuccessfull;
-    //        AdsManager.rewarded_Admobe_Shown += HandleRewardBasedVideoRewarded;
-    //}
-
-    //void OnDisable()
-    //{
-    //    if (AdsManager.adsManager)
-    //        AdsManager.onRewardedAdShown -= HandleonRewardedVideoViewedSuccessfull;
-    //        AdsManager.rewarded_Admobe_Shown -= HandleRewardBasedVideoRewarded;
-    //}
-
-    //void HandleonRewardedVideoViewedSuccessfull()
-    //{
-    //    currentLevelModel.timerScript.time += timeToBeAlotedAfterRewardedVideo;
-    //    currentLevelModel.timerScript.stopTimer = false;
-    //    currentLevelModel.timerScript.stopSpinner = false;
-    //    StartCoroutine(currentLevelModel.timerScript.StartCoundownTimer());
-    //    rewardedAd.SetActive(false);
-    //    spinnerImage.fillAmount = 0;
-    //}
-    //void HandleRewardBasedVideoRewarded()
-    //{
-    //    currentLevelModel.timerScript.time += timeToBeAlotedAfterRewardedVideo;
-    //    currentLevelModel.timerScript.stopTimer = false;
-    //    currentLevelModel.timerScript.stopSpinner = false;
-    //    StartCoroutine(currentLevelModel.timerScript.StartCoundownTimer());
-    //    rewardedAd.SetActive(false);
-    //    spinnerImage.fillAmount = 0;
-    //}
-
-    public void pauseGameDialoug()
+    private void PauseGameDialog()
     {
-        if (SoundManager.Instance) {
-            SoundManager.Instance.PlayButtonClickSound();
+        if (_soundManager) {
+            _soundManager.PlayButtonClickSound();
         }
         pauseScreen.SetActive(true);
         Time.timeScale = 0.01f;
-       // AdsManager_ZL.instance.CallInterstitialAd(Adspref.GamePause);
     }
 
-    public void resumeGameplay()
+    public void ResumeGameplay()
     {
-        if (SoundManager.Instance) {
-            SoundManager.Instance.PlayButtonClickSound();
+        if (_soundManager) {
+            _soundManager.PlayButtonClickSound();
         }
         pauseScreen.SetActive(false);
         Time.timeScale = 1f;
     }
 
-    public void restartGame()
+    public void RestartGame()
     {
-        if (SoundManager.Instance) {
-            SoundManager.Instance.PlayButtonClickSound();
+        if (_soundManager) {
+            _soundManager.PlayButtonClickSound();
         }
         int temp = Random.Range(0, loadingBackgrounds.Length);
         loadingScreen.SetActive(true);
         loadingScreen.GetComponent<Image>().sprite = loadingBackgrounds[temp];
         Time.timeScale = 1f;
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         StartCoroutine(LoadScene());
     }
 
-    public void home()
+    private void Home()
     {
-        if (SoundManager.Instance) {
-            SoundManager.Instance.PlayButtonClickSound();
+        if (_soundManager) {
+            _soundManager.PlayButtonClickSound();
         }
         int temp = Random.Range(0, loadingBackgrounds.Length);
         loadingScreen.SetActive(true);
@@ -372,20 +352,20 @@ public class GameplayScript_Handler : MonoBehaviour {
         SceneManager.LoadSceneAsync(1);
     }
 
-    public void levelFail_CompleteStatusEvent(bool temp)
+    public void LevelFail_CompleteStatusEvent(bool temp)
     {
-        StartCoroutine(levelFail_CompleteStatus(temp));
+        StartCoroutine(LevelFail_CompleteStatus(temp));
     }
 
-    IEnumerator levelFail_CompleteStatus(bool temp)
+    private IEnumerator LevelFail_CompleteStatus(bool temp)
     {
-        hideButtons();
+        HideButtons();
         if (PlayerPrefs.GetInt("SelectedLevel") == 0 || PlayerPrefs.GetInt("SelectedLevel") == 11 || PlayerPrefs.GetInt("SelectedLevel") == 12 || PlayerPrefs.GetInt("SelectedLevel") == 14 || PlayerPrefs.GetInt("SelectedLevel") == 18)
         {
             yield return new WaitForSeconds(3f);
             if (temp)
             {
-                levelCompleteDialoug();
+                LevelCompleteDialog();
             }
         }
         else if (true)
@@ -393,17 +373,17 @@ public class GameplayScript_Handler : MonoBehaviour {
             yield return new WaitForSeconds(0.01f);
             if (temp)
             {
-                levelCompleteDialoug();
+                LevelCompleteDialog();
             }
-            else if (!temp)
+            else
             {
-                levelFailedDialoug();
+                LevelFailedDialog();
             }
         }
         
     }
 
-    void levelCompleteDialoug()
+    private void LevelCompleteDialog()
     {
         completeScreen.SetActive(true);
         AddDiamonds(100);
@@ -425,44 +405,42 @@ public class GameplayScript_Handler : MonoBehaviour {
             }
         }
 
-        if (StoreScriptHandler.storeScript) {
-            int temp = StoreScriptHandler.storeScript.getRewardOfLevel(selectedLevel);
-            StoreScriptHandler.storeScript.setTotalEarnedCoins(temp + StoreScriptHandler.storeScript.getTotalEarnedCoins());
-            totalCoins = StoreScriptHandler.storeScript.getTotalEarnedCoins();
+        if (_storeHandler) {
+            int temp = _storeHandler.GetRewardOfLevel(selectedLevel);
+            _storeHandler.SetTotalEarnedCoins(temp + _storeHandler.GetTotalEarnedCoins());
+            _totalCoins = _storeHandler.GetTotalEarnedCoins();
             //StartCoroutine(delayedTotalCoinAdder());
         }
         //AdsManager_ZL.instance.CallInterstitialAd(Adspref.GamePause);
     }
 
-    IEnumerator delayedTotalCoinAdder()
+    private IEnumerator DelayedTotalCoinAdder()
     {
-        for (int i = 0; i < totalCoins;) {
+        for (int i = 0; i < _totalCoins;) {
             yield return new WaitForSeconds(0.01f);
             totalCoinsEarned.text = i.ToString();
             i += 25;
         }
         //Time.timeScale = 0.01f;
     }
-    public void coinCollect(int coin)
+    public void CoinCollect(int coin)
     {
-        if (StoreScriptHandler.storeScript)
+        if (_storeHandler)
         {
-            StoreScriptHandler.storeScript.setTotalEarnedCoins(coin + StoreScriptHandler.storeScript.getTotalEarnedCoins());
-            coinText.text = StoreScriptHandler.storeScript.getTotalEarnedCoins().ToString();
-            //Debug.Log("Coin Collected "+ coin);
+            _storeHandler.SetTotalEarnedCoins(coin + _storeHandler.GetTotalEarnedCoins());
+            coinText.text = _storeHandler.GetTotalEarnedCoins().ToString();
         }
     }
-    void levelFailedDialoug()
+    private void LevelFailedDialog()
     {
         failedScreen.SetActive(true);
         Time.timeScale = 0.01f;
-        //AdsManager_ZL.instance.CallInterstitialAd(Adspref.GamePause);
     }
 
-    public void next()
+    public void Next()
     {
-        if (SoundManager.Instance) {
-            SoundManager.Instance.PlayButtonClickSound();
+        if (_soundManager) {
+            _soundManager.PlayButtonClickSound();
         }
         Time.timeScale = 1f;
         if (PlayerPrefs.GetInt("SelectedMode") == 0)
@@ -474,10 +452,10 @@ public class GameplayScript_Handler : MonoBehaviour {
             }
             else
             {
-                home();
+                Home();
             }
         }
-       if (PlayerPrefs.GetInt("SelectedMode") == 1)
+        if (PlayerPrefs.GetInt("SelectedMode") == 1)
         {
             if (PlayerPrefs.GetInt("SelectedHouseLevel") < Levels.Length - 1)
             {
@@ -486,26 +464,24 @@ public class GameplayScript_Handler : MonoBehaviour {
             }
             else
             {
-                home();
+                Home();
             }
         }
-       
-       // AdsManager.adsManager.ShowAdMob();
     }
 
     public void SkipLevel()
     {
-        if (SoundManager.Instance)
+        if (_soundManager)
         {
-            SoundManager.Instance.PlayButtonClickSound();
+            _soundManager.PlayButtonClickSound();
         }
         Time.timeScale = 1f;
         
         if (PlayerPrefs.GetInt("SelectedMode") == 0)
         {
-            if (StoreScriptHandler.storeScript.getTotalEarnedCoins() >= 300)
+            if (_storeHandler.GetTotalEarnedCoins() >= 300)
             {
-                StoreScriptHandler.storeScript.setTotalEarnedCoins(StoreScriptHandler.storeScript.getTotalEarnedCoins() - 300);
+                _storeHandler.SetTotalEarnedCoins(_storeHandler.GetTotalEarnedCoins() - 300);
                 if (PlayerPrefs.GetInt("SelectedLevel") == PlayerPrefs.GetInt("TotalLevelsUnlocked") && PlayerPrefs.GetInt("TotalLevelsUnlocked") < Levels.Length - 1)
                 {
                     PlayerPrefs.SetInt("TotalLevelsUnlocked", PlayerPrefs.GetInt("TotalLevelsUnlocked") + 1);
@@ -517,14 +493,10 @@ public class GameplayScript_Handler : MonoBehaviour {
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }
             }
-            else
-            {
-                //Debug.Log("Insufficient Diamonds...");
-            }
         }
     }
 
-    IEnumerator LoadScene()
+    private IEnumerator LoadScene()
     {
         int temp = Random.Range(0, loadingBackgrounds.Length);
         loadingScreen.SetActive(true);
@@ -533,8 +505,8 @@ public class GameplayScript_Handler : MonoBehaviour {
 
         while (!asyncOperation.isDone)
         {
-            loading_Text.text = (int)(asyncOperation.progress * 100) + "%";
-            if (LoadingImage) LoadingImage.fillAmount = asyncOperation.progress;
+            loadingText.text = (int)(asyncOperation.progress * 100) + "%";
+            if (loadingImage) loadingImage.fillAmount = asyncOperation.progress;
 
             yield return null;
         }

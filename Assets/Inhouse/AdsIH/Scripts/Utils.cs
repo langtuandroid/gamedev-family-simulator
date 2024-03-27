@@ -1,15 +1,15 @@
 ﻿using System.IO;
 using UnityEngine;
 
-namespace Area730.MoreAppsPage
+namespace Inhouse.AdsIH.Scripts
 {
-    class Utilswl
+    public class Utilswl
     {
-        public const string MORE_APPS_FILENAME = "Area730_MoreApps.json";
+        public const string MoreAppsFilename = "Area730_MoreApps.json";
 
         public static string GetSettingsFilePath()
         {
-            return Path.Combine(Application.persistentDataPath, MORE_APPS_FILENAME);
+            return Path.Combine(Application.persistentDataPath, MoreAppsFilename);
         }
 
         public static bool ConfigFileExists()
