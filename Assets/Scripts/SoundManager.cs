@@ -1,47 +1,46 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SoundManager : MonoBehaviour {
 
 	[Header("Audio Clips")]
-	public AudioClip mainMenuSound;
+	[SerializeField] public AudioClip mainMenuSound;
 	public AudioClip gamePlaySound,buttonClick,levelFailed,levelComplete;
+	
 	[Header("Audio Sources")]
 	[SerializeField]
 	private AudioSource musicSource;
-	[SerializeField]
-	private AudioSource sfxSource,levelFail_CompleteSource;
+	
+	[SerializeField] private AudioSource sfxSource, levelFail_CompleteSource;
+	
 	[Header("Audio Listener")]
-	[SerializeField]
-	AudioListener CurrentAudioListener;
+	[SerializeField] private AudioListener CurrentAudioListener;
 
-	public static SoundManager _SoundManager;
+	public static SoundManager Instance;
 
-	void Awake()
+	private void Awake()
 	{
-		if (_SoundManager == null) {
-			_SoundManager = this;
+		if (Instance == null) {
+			Instance = this;
 		} 
 		else {
-			Destroy (this.gameObject);	
+			Destroy (gameObject);	
 		}
-		DontDestroyOnLoad (this.gameObject);
-		verifyAudioSources ();
+		DontDestroyOnLoad (gameObject);
+		VerifyAudioSources ();
 	}
 
-	public void sfxVolume()
+	public void SfxVolume()
 	{
 		sfxSource.volume = PlayerPrefs.GetFloat ("SFXVol",1);
 	}
 
-	public void changeVolume()
+	public void ChangeVolume()
 	{
 		AudioListener.volume = PlayerPrefs.GetFloat ("Vol",1);
 	}
 
 
-	void verifyAudioSources()
+	private void VerifyAudioSources()
 	{
 		musicSource.playOnAwake = false;
 		musicSource.loop = true;
@@ -51,44 +50,44 @@ public class SoundManager : MonoBehaviour {
 		levelFail_CompleteSource.loop = false;
 	}
 
-	public void playMainMenuSounds()
+	public void PlayMainMenuSounds()
 	{
 		musicSource.clip = mainMenuSound;
 		musicSource.Play ();
 	}
 
-	public void playMainMenuSounds(float temp)
+	public void PlayMainMenuSounds(float temp)
 	{
 		musicSource.clip = mainMenuSound;
 		musicSource.Play ();
 		musicSource.volume = temp;
 	}
 
-	public void playGameplaySounds()
+	public void PlayGameplaySounds()
 	{
 		musicSource.clip = gamePlaySound;
 		musicSource.Play ();
 	}
 
-	public void playGameplaySounds(float temp)
+	public void PlayGameplaySounds(float temp)
 	{
 		musicSource.clip = gamePlaySound;
 		musicSource.Play ();
 		musicSource.volume = temp;
 	}
 
-	public void playButtonClickSound()
+	public void PlayButtonClickSound()
 	{
 		sfxSource.clip = buttonClick;
 		sfxSource.Play ();
 	}
 
-	public void playLevelFailedSound()
+	public void PlayLevelFailedSound()
 	{
 		levelFail_CompleteSource.clip = levelFailed;
 		levelFail_CompleteSource.Play ();
 	}
-	public void playLevelCompleteSound()
+	public void PlayLevelCompleteSound()
 	{
 		levelFail_CompleteSource.clip = levelComplete;
 		levelFail_CompleteSource.Play ();

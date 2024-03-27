@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4439372, g: 0.49315345, b: 0.5721989, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9160,6 +9160,56 @@ Transform:
   m_Children:
   - {fileID: 894758348}
   m_Father: {fileID: 1394221316}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &397845740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 397845742}
+  - component: {fileID: 397845741}
+  m_Layer: 0
+  m_Name: UrlManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &397845741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397845740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b854e5bd4768441a70e717451b4fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _urlForMoreGames: https://www.google.com
+  _urlForPrivacyPolicy: https://www.google.com
+  _urlForRateUs: https://www.google.com
+  _privacyButton: {fileID: 2664918069119370439}
+  _moreGamesButton: {fileID: 114541692850656888}
+  _rateUsButton: {fileID: 114777148386569800}
+--- !u!4 &397845742
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397845740}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.7996771, y: -0.011254971, z: -1.2638036}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &400484663
 GameObject:
@@ -27628,9 +27678,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1a2126e9d93b234381b87e949e52a68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Guns: {fileID: 1906073140}
+  guns: {fileID: 1906073140}
   canvas: {fileID: 223461533486539490}
-  SelectionCamera: {fileID: 1391746652}
+  selectionCamera: {fileID: 1391746652}
 --- !u!1 &1342477110
 GameObject:
   m_ObjectHideFlags: 0
@@ -53288,31 +53338,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114821890897881596}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: MainMenuScriptHandler, Assembly-CSharp
-        m_MethodName: OpenLink
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: https://www.google.com
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: PlayButtonClickSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &114567411976522758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54056,19 +54082,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114680897838657632}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: MainMenuScriptHandler, Assembly-CSharp
-        m_MethodName: OpenLink
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: https://www.google.com
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &114785443261619650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58506,31 +58520,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4343161155641895013}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: MainMenuScriptHandler, Assembly-CSharp
-        m_MethodName: OpenLink
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: https://www.google.com
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 114025438059805638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: PlayButtonClickSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &2666353280453984179
 GameObject:
   m_ObjectHideFlags: 0
@@ -65113,6 +65103,7 @@ SceneRoots:
   - {fileID: 4112532190725516}
   - {fileID: 4376918013228700}
   - {fileID: 4732672975353805}
+  - {fileID: 397845742}
   - {fileID: 96616482}
   - {fileID: 224639596798698476}
   - {fileID: 1391746650}

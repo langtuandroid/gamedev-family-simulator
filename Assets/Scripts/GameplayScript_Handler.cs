@@ -93,8 +93,8 @@ public class GameplayScript_Handler : MonoBehaviour {
         }
 
         env.SetActive(true);
-        if (SoundManager._SoundManager) {
-            SoundManager._SoundManager.playGameplaySounds(0.65f);
+        if (SoundManager.Instance) {
+            SoundManager.Instance.PlayGameplaySounds(0.65f);
         }
         if (PlayerPrefs.GetInt("ComingFromGP", 0) == 0) {
             PlayerPrefs.SetInt("ComingFromGP", 1);
@@ -256,15 +256,15 @@ public class GameplayScript_Handler : MonoBehaviour {
 
     public void playButtonSound()
     {
-        if (SoundManager._SoundManager) {
-            SoundManager._SoundManager.playButtonClickSound();
+        if (SoundManager.Instance) {
+            SoundManager.Instance.PlayButtonClickSound();
         }
     }
 
     public void skipButtonPressed()
     {
-        if (SoundManager._SoundManager) {
-            SoundManager._SoundManager.playButtonClickSound();
+        if (SoundManager.Instance) {
+            SoundManager.Instance.PlayButtonClickSound();
         }
         //currentLevelModel.skipCutScene = true;
     }
@@ -330,8 +330,8 @@ public class GameplayScript_Handler : MonoBehaviour {
 
     public void pauseGameDialoug()
     {
-        if (SoundManager._SoundManager) {
-            SoundManager._SoundManager.playButtonClickSound();
+        if (SoundManager.Instance) {
+            SoundManager.Instance.PlayButtonClickSound();
         }
         pauseScreen.SetActive(true);
         Time.timeScale = 0.01f;
@@ -340,8 +340,8 @@ public class GameplayScript_Handler : MonoBehaviour {
 
     public void resumeGameplay()
     {
-        if (SoundManager._SoundManager) {
-            SoundManager._SoundManager.playButtonClickSound();
+        if (SoundManager.Instance) {
+            SoundManager.Instance.PlayButtonClickSound();
         }
         pauseScreen.SetActive(false);
         Time.timeScale = 1f;
@@ -349,8 +349,8 @@ public class GameplayScript_Handler : MonoBehaviour {
 
     public void restartGame()
     {
-        if (SoundManager._SoundManager) {
-            SoundManager._SoundManager.playButtonClickSound();
+        if (SoundManager.Instance) {
+            SoundManager.Instance.PlayButtonClickSound();
         }
         int temp = Random.Range(0, loadingBackgrounds.Length);
         loadingScreen.SetActive(true);
@@ -362,8 +362,8 @@ public class GameplayScript_Handler : MonoBehaviour {
 
     public void home()
     {
-        if (SoundManager._SoundManager) {
-            SoundManager._SoundManager.playButtonClickSound();
+        if (SoundManager.Instance) {
+            SoundManager.Instance.PlayButtonClickSound();
         }
         int temp = Random.Range(0, loadingBackgrounds.Length);
         loadingScreen.SetActive(true);
@@ -461,8 +461,8 @@ public class GameplayScript_Handler : MonoBehaviour {
 
     public void next()
     {
-        if (SoundManager._SoundManager) {
-            SoundManager._SoundManager.playButtonClickSound();
+        if (SoundManager.Instance) {
+            SoundManager.Instance.PlayButtonClickSound();
         }
         Time.timeScale = 1f;
         if (PlayerPrefs.GetInt("SelectedMode") == 0)
@@ -495,9 +495,9 @@ public class GameplayScript_Handler : MonoBehaviour {
 
     public void SkipLevel()
     {
-        if (SoundManager._SoundManager)
+        if (SoundManager.Instance)
         {
-            SoundManager._SoundManager.playButtonClickSound();
+            SoundManager.Instance.PlayButtonClickSound();
         }
         Time.timeScale = 1f;
         

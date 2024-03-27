@@ -98,7 +98,7 @@ public class MainMenuScriptHandler : MonoBehaviour
     public void OnStart()
     {
         Time.timeScale = 1f;
-        SoundManager._SoundManager.playMainMenuSounds(1f);
+        SoundManager.Instance.PlayMainMenuSounds(1f);
       
        // StartCheckInappStats();
        // CheckEveryThingUnlocked();
@@ -221,7 +221,7 @@ public class MainMenuScriptHandler : MonoBehaviour
 
     public void PlayButtonClickSound()
     {
-        SoundManager._SoundManager.playButtonClickSound();
+        SoundManager.Instance.PlayButtonClickSound();
     }
 
     void initLevelSelection()

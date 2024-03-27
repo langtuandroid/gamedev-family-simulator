@@ -1,21 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class OnEnableDisable : MonoBehaviour
 {
-    public GameObject Guns;
-    public Canvas canvas;
-    public Camera SelectionCamera;
+    [SerializeField] private GameObject guns;
+    [SerializeField] private Canvas canvas;
+    [SerializeField] private Camera selectionCamera;
     private void OnEnable()
     {
         canvas.renderMode = RenderMode.ScreenSpaceCamera;
-        canvas.worldCamera = SelectionCamera;
-        Guns.SetActive(true);
+        canvas.worldCamera = selectionCamera;
+        guns.SetActive(true);
     }
     private void OnDisable()
     {
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-        Guns.SetActive(false);
+        guns.SetActive(false);
     }
 }
