@@ -40476,6 +40476,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1224099821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1224099822}
+  m_Layer: 0
+  m_Name: System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1224099822
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224099821}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 362.00977, y: -10.027116, z: 111.48794}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1224437476
 GameObject:
   m_ObjectHideFlags: 0
@@ -62330,9 +62361,11 @@ MonoBehaviour:
   - {fileID: 1067786848}
   - {fileID: 1095964687}
   audioSource: {fileID: 1066770907}
-  rightClip: {fileID: 0}
-  wrongClip: {fileID: 0}
-  players: []
+  rightClip: {fileID: 8300000, guid: 1f2a717bc2672394282399b8d463f560, type: 3}
+  wrongClip: {fileID: 8300000, guid: e0026885cd1f3ff4db723ba4d2e5c52b, type: 3}
+  players:
+  - {fileID: 7104160107571774369}
+  - {fileID: 804133154791545941}
   activeModes:
   - {fileID: 873504825}
   - {fileID: 1941747784}
@@ -62353,12 +62386,12 @@ MonoBehaviour:
   env: {fileID: 1356334250}
   resultPanel: {fileID: 1967308152}
   correctText: {fileID: 1943150423}
-  wrongText: {fileID: 0}
-  totalText: {fileID: 0}
-  totalMQue: {fileID: 0}
-  totalSQue: {fileID: 0}
-  totalCQue: {fileID: 0}
-  totalAQue: {fileID: 0}
+  wrongText: {fileID: 634517070}
+  totalText: {fileID: 717283522}
+  totalMQue: {fileID: 1546181300}
+  totalSQue: {fileID: 1591460583}
+  totalCQue: {fileID: 1166919515}
+  totalAQue: {fileID: 289231094}
   remarks:
   - {fileID: 1966951152}
   - {fileID: 1314195392}
@@ -137043,3 +137076,4 @@ SceneRoots:
   - {fileID: 7104160107572141633}
   - {fileID: 804133154791178677}
   - {fileID: 2013529065}
+  - {fileID: 1224099822}

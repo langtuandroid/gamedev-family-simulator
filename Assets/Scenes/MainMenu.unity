@@ -477,8 +477,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeGirlFashion_Items
         m_Mode: 3
         m_Arguments:
@@ -1227,8 +1227,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeGirlHair
         m_Mode: 3
         m_Arguments:
@@ -2679,8 +2679,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeBoyHair
         m_Mode: 3
         m_Arguments:
@@ -5440,8 +5440,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeMotherHair
         m_Mode: 3
         m_Arguments:
@@ -5691,8 +5691,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeGirlHair
         m_Mode: 3
         m_Arguments:
@@ -6959,8 +6959,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeMotherEyes
         m_Mode: 3
         m_Arguments:
@@ -7971,8 +7971,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeGirlHair
         m_Mode: 3
         m_Arguments:
@@ -9279,8 +9279,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeBoyHair
         m_Mode: 3
         m_Arguments:
@@ -10222,8 +10222,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeMotherDress
         m_Mode: 3
         m_Arguments:
@@ -10466,8 +10466,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeBoyEyes
         m_Mode: 3
         m_Arguments:
@@ -11618,8 +11618,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeGirlEyes
         m_Mode: 3
         m_Arguments:
@@ -12543,8 +12543,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeMotherDress
         m_Mode: 3
         m_Arguments:
@@ -12823,8 +12823,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeGirlHair
         m_Mode: 3
         m_Arguments:
@@ -13844,8 +13844,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeBoyEyes
         m_Mode: 3
         m_Arguments:
@@ -14769,8 +14769,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeMotherDress
         m_Mode: 3
         m_Arguments:
@@ -15498,8 +15498,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeMotherEyes
         m_Mode: 3
         m_Arguments:
@@ -16672,8 +16672,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeBoyHair
         m_Mode: 3
         m_Arguments:
@@ -18004,8 +18004,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeGirlHair
         m_Mode: 3
         m_Arguments:
@@ -18195,8 +18195,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeGirlFashion_Items
         m_Mode: 3
         m_Arguments:
@@ -18942,8 +18942,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeGirlHair
         m_Mode: 3
         m_Arguments:
@@ -20008,8 +20008,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeBoyEyes
         m_Mode: 3
         m_Arguments:
@@ -21652,8 +21652,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeGirlEyes
         m_Mode: 3
         m_Arguments:
@@ -22314,8 +22314,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeGirlFashion_Items
         m_Mode: 3
         m_Arguments:
@@ -22872,8 +22872,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeGirlDress
         m_Mode: 3
         m_Arguments:
@@ -23499,8 +23499,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeBoyEyes
         m_Mode: 3
         m_Arguments:
@@ -24852,8 +24852,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeGirlDress
         m_Mode: 3
         m_Arguments:
@@ -27015,8 +27015,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeMotherHair
         m_Mode: 3
         m_Arguments:
@@ -27824,8 +27824,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeGirlFashion_Items
         m_Mode: 3
         m_Arguments:
@@ -29629,8 +29629,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeGirlDress
         m_Mode: 3
         m_Arguments:
@@ -32093,8 +32093,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeGirlDress
         m_Mode: 3
         m_Arguments:
@@ -35297,8 +35297,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeMotherEyes
         m_Mode: 3
         m_Arguments:
@@ -36751,8 +36751,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeGirlEyes
         m_Mode: 3
         m_Arguments:
@@ -37146,8 +37146,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeBoyHair
         m_Mode: 3
         m_Arguments:
@@ -37566,8 +37566,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeMotherHair
         m_Mode: 3
         m_Arguments:
@@ -38747,8 +38747,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeMotherHair
         m_Mode: 3
         m_Arguments:
@@ -45928,8 +45928,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeGirlEyes
         m_Mode: 3
         m_Arguments:
@@ -46319,8 +46319,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeMotherDress
         m_Mode: 3
         m_Arguments:
@@ -47167,8 +47167,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
         m_MethodName: ChangeMotherEyes
         m_Mode: 3
         m_Arguments:
@@ -48088,14 +48088,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
         type: 3}
+      propertyPath: mother
+      value: 
+      objectReference: {fileID: 2003887011}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: buyPanel
+      value: 
+      objectReference: {fileID: 1134002285}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyLeftEye
+      value: 
+      objectReference: {fileID: 1623377636}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
       propertyPath: leftButton
       value: 
       objectReference: {fileID: 1373847316488374}
     - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
         type: 3}
+      propertyPath: boyRightEye
+      value: 
+      objectReference: {fileID: 2066185692}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
       propertyPath: rightButton
       value: 
       objectReference: {fileID: 1961069215376148}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyHairMesh01
+      value: 
+      objectReference: {fileID: 3605318688298285731}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyHairMesh02
+      value: 
+      objectReference: {fileID: 2666353280453984179}
     - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
         type: 3}
       propertyPath: girlDressMesh
@@ -48113,9 +48143,94 @@ PrefabInstance:
       objectReference: {fileID: 1140834774}
     - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
         type: 3}
+      propertyPath: boyEyes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyHair.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlEyes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlHair.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: notEnoughMoneyPanel
+      value: 
+      objectReference: {fileID: 1000523181}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlDress.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyButtons.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyEyes.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: 6db84318fd6f9f5438588795fe7079b0, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyEyes.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: b146655bf7951214fb0ad0a39c766a06, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyEyes.Array.data[2]
+      value: 
+      objectReference: {fileID: 2800000, guid: 2259c002c335f174eaab83e619dcd2eb, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyEyes.Array.data[3]
+      value: 
+      objectReference: {fileID: 2800000, guid: 3f38c94fed55ebb4eae2ad4b36f3e266, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyHair.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: 338d6e2cebc47d148909b9fd86f061f8, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyHair.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: 12a299f076b03404eb22074e8066d1f0, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyHair.Array.data[2]
+      value: 
+      objectReference: {fileID: 2800000, guid: aba7c21e5516a3c418d6f8bb2a2736ea, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyHair.Array.data[3]
+      value: 
+      objectReference: {fileID: 2800000, guid: 07e2245d7ad4ce347a160c668dae4e66, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
       propertyPath: cameraLookingAtPlayer
       value: 
       objectReference: {fileID: 1391746649}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherEyes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherHair.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
         type: 3}
       propertyPath: girlButtons.Array.size
@@ -48123,9 +48238,184 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
         type: 3}
+      propertyPath: girlEyes.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: 6db84318fd6f9f5438588795fe7079b0, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlEyes.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: b146655bf7951214fb0ad0a39c766a06, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlEyes.Array.data[2]
+      value: 
+      objectReference: {fileID: 2800000, guid: 2259c002c335f174eaab83e619dcd2eb, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlEyes.Array.data[3]
+      value: 
+      objectReference: {fileID: 2800000, guid: 3f38c94fed55ebb4eae2ad4b36f3e266, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlHair.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: dec0793b22cab0d49b856d7aadb13306, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlHair.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: 66726d1f96c3dbc4f8d75f359811c15d, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlHair.Array.data[2]
+      value: 
+      objectReference: {fileID: 2800000, guid: 068673680aecf664383b83bb81bfb1cb, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlHair.Array.data[3]
+      value: 
+      objectReference: {fileID: 2800000, guid: c1f67102523019e4eaeb0457dfb6f80b, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlHair.Array.data[4]
+      value: 
+      objectReference: {fileID: 2800000, guid: 8433299b966fb144fa732ab211db8c58, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlHair.Array.data[5]
+      value: 
+      objectReference: {fileID: 2800000, guid: 9f34e65e172596b41ad3e3c7a8c701c1, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherDress.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyMaterials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
       propertyPath: fashionItems.Array.size
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlDress.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: 8c6b84bd6176b124fa1db4c4e8bc509b, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlDress.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: 402106f81ef6ccc4c9907789727b070c, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlDress.Array.data[2]
+      value: 
+      objectReference: {fileID: 2800000, guid: 93e40c42969dc794485c0c277595e955, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlDress.Array.data[3]
+      value: 
+      objectReference: {fileID: 2800000, guid: bc9e76470cd2a44499d7dbc7be24318f, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 877316029}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 101622578}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 1865779937}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 413465482}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyButtons.Array.data[4]
+      value: 
+      objectReference: {fileID: 481401285}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyButtons.Array.data[5]
+      value: 
+      objectReference: {fileID: 703078419}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyButtons.Array.data[6]
+      value: 
+      objectReference: {fileID: 1245564946}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyButtons.Array.data[7]
+      value: 
+      objectReference: {fileID: 1071486195}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlEyeMeshes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlMaterials.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherButtons.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherEyes.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: 7575da63d68870c48957242ec34a56ac, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherEyes.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: 4a399dededd214f4bb75429b11ca94ad, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherEyes.Array.data[2]
+      value: 
+      objectReference: {fileID: 2800000, guid: e9bdd7b6324f3384b8af390361836dba, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherEyes.Array.data[3]
+      value: 
+      objectReference: {fileID: 2800000, guid: 66121f0a363be264b818d8431655dec4, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherHair.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: 705e6d9f66585ac4396cfcea7edbe82d, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherHair.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: 7e1fdb1730caa7a44b94fc8289d7a5f9, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherHair.Array.data[2]
+      value: 
+      objectReference: {fileID: 2800000, guid: b109338ed0a849b4e89af39483b83377, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherHair.Array.data[3]
+      value: 
+      objectReference: {fileID: 2800000, guid: bdf7f1d9324ce47478fbc8a1d8447718, type: 3}
     - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
         type: 3}
       propertyPath: customizePanel.Array.size
@@ -48135,12 +48425,87 @@ PrefabInstance:
         type: 3}
       propertyPath: girlButtons.Array.data[0]
       value: 
-      objectReference: {fileID: 245233057}
+      objectReference: {fileID: 352141450}
     - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
         type: 3}
       propertyPath: girlButtons.Array.data[1]
       value: 
-      objectReference: {fileID: 793470892}
+      objectReference: {fileID: 1000068746}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 229256086}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 959626180}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[4]
+      value: 
+      objectReference: {fileID: 657302892}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[5]
+      value: 
+      objectReference: {fileID: 36464373}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[6]
+      value: 
+      objectReference: {fileID: 1154145309}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[7]
+      value: 
+      objectReference: {fileID: 2049792079}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[8]
+      value: 
+      objectReference: {fileID: 1848224800}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[9]
+      value: 
+      objectReference: {fileID: 600733565}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlHairMeshes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherDress.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: ade43cdb3543f5a4bb1f6161948ceee4, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherDress.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: 9b74c3da261264a4aa68f3329a41e96d, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherDress.Array.data[2]
+      value: 
+      objectReference: {fileID: 2800000, guid: e5089c5005afa97469f5279be82fc1a2, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherDress.Array.data[3]
+      value: 
+      objectReference: {fileID: 2800000, guid: f29f0940da7f3d44fba2d95b2c59e4f4, type: 3}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyMaterials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 647f8ee040ab72b49a080fa49773952c, type: 2}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: boyMaterials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 88421aee3ec89704bbbcb5fa2e4dac3f, type: 2}
     - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
         type: 3}
       propertyPath: fashionItems.Array.data[0]
@@ -48163,19 +48528,249 @@ PrefabInstance:
       objectReference: {fileID: 2800000, guid: 6283c40e01d6fca4da3a4e66bddf5839, type: 3}
     - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
         type: 3}
+      propertyPath: girlButtons.Array.data[10]
+      value: 
+      objectReference: {fileID: 1218447988}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[11]
+      value: 
+      objectReference: {fileID: 1301408414}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[12]
+      value: 
+      objectReference: {fileID: 1637504148}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[13]
+      value: 
+      objectReference: {fileID: 1503785749}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[14]
+      value: 
+      objectReference: {fileID: 966423905}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[15]
+      value: 
+      objectReference: {fileID: 1190319121}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[16]
+      value: 
+      objectReference: {fileID: 1418017615}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[17]
+      value: 
+      objectReference: {fileID: 15119479}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[18]
+      value: 
+      objectReference: {fileID: 352141450}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[19]
+      value: 
+      objectReference: {fileID: 1000068746}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[20]
+      value: 
+      objectReference: {fileID: 229256086}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[21]
+      value: 
+      objectReference: {fileID: 959626180}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[22]
+      value: 
+      objectReference: {fileID: 657302892}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlButtons.Array.data[23]
+      value: 
+      objectReference: {fileID: 36464373}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherMaterials.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlEyeMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 672943027}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlEyeMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 228372012}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlMaterials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 501345ec616afa749a21429aff790cfd, type: 2}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlMaterials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 266d0714cc1ed934f8dcba29ea809721, type: 2}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlMaterials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: fd849aeb4c261ea43bf8ca55d2cfb987, type: 2}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlMaterials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: c3d3688a2f4fb1340b0ee16c8794901a, type: 2}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlMaterials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4855b52379b825742b15a3f3bf67ad2f, type: 2}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlMaterials.Array.data[5]
+      value: 
+      objectReference: {fileID: 2100000, guid: 67edcb572945a2649bebdbe4d7300e4f, type: 2}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1386338057}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 1886656806}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 1939405137}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 223440930}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherButtons.Array.data[4]
+      value: 
+      objectReference: {fileID: 305937837}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherButtons.Array.data[5]
+      value: 
+      objectReference: {fileID: 2097147001}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherButtons.Array.data[6]
+      value: 
+      objectReference: {fileID: 799477542}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherButtons.Array.data[7]
+      value: 
+      objectReference: {fileID: 1774548889}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherButtons.Array.data[8]
+      value: 
+      objectReference: {fileID: 645134418}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherButtons.Array.data[9]
+      value: 
+      objectReference: {fileID: 465991240}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: customizePanel.Array.data[0]
+      value: 
+      objectReference: {fileID: 776312428}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: customizePanel.Array.data[1]
+      value: 
+      objectReference: {fileID: 1543180458}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: customizePanel.Array.data[2]
+      value: 
+      objectReference: {fileID: 1835250208}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlHairMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 775476577}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlHairMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 435341279}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlHairMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 1347944148}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: girlHairMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 1681955349}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherButtons.Array.data[10]
+      value: 
+      objectReference: {fileID: 2060595878}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherButtons.Array.data[11]
+      value: 
+      objectReference: {fileID: 771698930}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
       propertyPath: objectSelected.Array.data[0]
       value: 
-      objectReference: {fileID: 804133154791545941}
+      objectReference: {fileID: 7104160107571774369}
     - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
         type: 3}
       propertyPath: objectSelected.Array.data[1]
       value: 
-      objectReference: {fileID: 7104160107571774369}
+      objectReference: {fileID: 804133154791545941}
     - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
         type: 3}
       propertyPath: objectSelected.Array.data[2]
       value: 
       objectReference: {fileID: 2003887011}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherMaterials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51acee6646f63d64f9fe3b6611643bef, type: 2}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherMaterials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a09443f9e472844885e1aaee045ad3a, type: 2}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherMaterials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: e19beb69ab9029b4e98bbce08ce69388, type: 2}
+    - target: {fileID: 114451476570468642, guid: 4e507e73ef67144888d070a24ab0e48c,
+        type: 3}
+      propertyPath: motherMaterials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: e19beb69ab9029b4e98bbce08ce69388, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -49641,9 +50236,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 190704637}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
+        m_MethodName: LeftRightState
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -50269,9 +50864,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: leftRightState
+      - m_Target: {fileID: 2139423060}
+        m_TargetAssemblyTypeName: SelectionStoreHandler, Assembly-CSharp
+        m_MethodName: LeftRightState
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
