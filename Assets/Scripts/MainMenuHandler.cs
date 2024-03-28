@@ -21,6 +21,7 @@ public class MainMenuHandler : MonoBehaviour
     [SerializeField] private GameObject modeSelectionPanel;
     [SerializeField] private GameObject customizationPanel;
     [SerializeField] private GameObject learningModePanel;
+    [SerializeField] private GameObject settingsPanel;
     [SerializeField] private Scrollbar[] scroll;
     [SerializeField] private GameObject parkLevelSelection, houseLevelSelection;
     [SerializeField] private GameObject shopPanel;
@@ -174,6 +175,18 @@ public class MainMenuHandler : MonoBehaviour
     {
         learningModePanel.SetActive(true);
         modeSelectionPanel.SetActive(false);
+    }
+    
+    public void ShowSettingsPanel()
+    {
+        if (settingsPanel.activeSelf)
+        {
+            settingsPanel.SetActive(false);
+        }
+        else
+        {
+            settingsPanel.SetActive(true);
+        }
     }
     public void BackFromLearningModePanel()
     {
