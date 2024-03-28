@@ -203,7 +203,7 @@ public class MainMenuHandler : MonoBehaviour
     public void SelectLearningMode(int mode)
     {
         PlayerPrefs.SetInt("SelectedLearningMode", mode);
-        StartCoroutine(LoadScene(3));
+        StartCoroutine(LoadScene(2));
         PlayerPrefs.SetInt("ShowLearningMode", 0);
     }
     
@@ -212,9 +212,11 @@ public class MainMenuHandler : MonoBehaviour
         if (!parkLevels[temp].transform.GetChild(1).gameObject.activeSelf) {
             
             PlayerPrefs.SetInt("SelectedLevel", temp);
-            StartCoroutine(LoadScene(2));
+            StartCoroutine(LoadScene(1));
         }
-    } public void SelectHouseLevel(int temp)
+    } 
+    
+    public void SelectHouseLevel(int temp)
     {
         if (!houseLevels[temp].transform.GetChild(1).gameObject.activeSelf) {
             
