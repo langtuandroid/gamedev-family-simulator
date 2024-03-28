@@ -50538,7 +50538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ab996b6c3aee684aa35a3a085d20717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLoading: 1
+  isLoading: 0
   logo: {fileID: 2093735518}
   loadingImages:
   - {fileID: 21300000, guid: 912af5c83c25148eb8d9e16a57a4f9dc, type: 3}

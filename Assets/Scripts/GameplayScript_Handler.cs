@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Invector.vCamera;
 using Invector;
+using TMPro;
 using UnityEngine.Serialization;
 using Zenject;
 
@@ -38,7 +39,8 @@ public class GameplayHandler : MonoBehaviour {
     
     [Header("Objective Dialog Screen")]
     [SerializeField] private GameObject objDialog;
-    [SerializeField] private Text objText,secondaryText;
+    [SerializeField] private Text objText;
+    [SerializeField] private TextMeshProUGUI secondaryText;
     
     [Header("Gameplay Buttons")]
     public GameObject[] gpButtons;
@@ -89,12 +91,12 @@ public class GameplayHandler : MonoBehaviour {
     public GameObject RewardedAd => rewardedAd;
     public Image SpinnerImage => spinnerImage;
 
-    public Text SecondaryText => secondaryText;
+    public TextMeshProUGUI SecondaryText => secondaryText;
 
     void Awake()
     {
         Time.timeScale = 1f;
-        HideButtons();
+        //HideButtons();
     }
 
     private void Start()
@@ -333,7 +335,7 @@ public class GameplayHandler : MonoBehaviour {
         StartCoroutine(LoadScene());
     }
 
-    private void Home()
+    public void Home()
     {
         if (_soundManager) {
             _soundManager.PlayButtonClickSound();
@@ -342,7 +344,7 @@ public class GameplayHandler : MonoBehaviour {
         loadingScreen.SetActive(true);
         loadingScreen.GetComponent<Image>().sprite = loadingBackgrounds[temp];
         Time.timeScale = 1f;
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(0);
     }
 
     public void LevelFail_CompleteStatusEvent(bool temp)
