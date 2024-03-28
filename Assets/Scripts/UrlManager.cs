@@ -6,42 +6,32 @@ using UnityEngine.UI;
 
 public class UrlManager : MonoBehaviour
 {
-    [SerializeField] private string _urlForMoreGames;
     [SerializeField] private string _urlForPrivacyPolicy;
-    [SerializeField] private string _urlForRateUs;
+    [SerializeField] private string _urlForTerms;
     
-    [SerializeField] private Button _privacyButton; 
-    [SerializeField] private Button _moreGamesButton;
-    [SerializeField] private Button _rateUsButton;
+    [SerializeField] private Button _privacyButton;
+    [SerializeField] private Button _termsButton;
 
     private bool _externalOpeningUrlDelayFlag = false;
 
     private void Awake()
     {
-        if (_rateUsButton != null)
-            _rateUsButton.onClick.AddListener(() => OpenUrl(_urlForRateUs));
+        if (_termsButton != null)
+            _termsButton.onClick.AddListener(() => OpenUrl(_urlForTerms));
 
         if (_privacyButton != null)
             _privacyButton.onClick.AddListener(() => OpenUrl(_urlForPrivacyPolicy));
         
-        if (_moreGamesButton != null)
-        {
-            _moreGamesButton.onClick.AddListener(() => OpenUrl(_urlForMoreGames));
-        }
     }
 
     private void OnDestroy()
     {
-        if (_rateUsButton != null)
-            _rateUsButton.onClick.RemoveListener(() => OpenUrl(_urlForRateUs));
+        if (_termsButton != null)
+            _termsButton.onClick.RemoveListener(() => OpenUrl(_urlForTerms));
 
         if (_privacyButton != null)
             _privacyButton.onClick.RemoveListener(() => OpenUrl(_urlForPrivacyPolicy));
         
-        if (_moreGamesButton != null)
-        {
-            _moreGamesButton.onClick.RemoveListener(() => OpenUrl(_urlForMoreGames));
-        }
     }
 
     private async void OpenUrl(string url)

@@ -39,7 +39,7 @@ public class GameplayHandler : MonoBehaviour {
     
     [Header("Objective Dialog Screen")]
     [SerializeField] private GameObject objDialog;
-    [SerializeField] private Text objText;
+    [SerializeField] private TextMeshProUGUI objText;
     [SerializeField] private TextMeshProUGUI secondaryText;
     
     [Header("Gameplay Buttons")]
@@ -73,7 +73,7 @@ public class GameplayHandler : MonoBehaviour {
     [SerializeField] private int selectedLevel, unlockedLevel;
     [SerializeField] private GameObject skipCutScene;
     
-    [SerializeField] private Text totalCoinsEarned, timerText, coinText;
+    [SerializeField] private TextMeshProUGUI totalCoinsEarned, timerText, coinText;
     [SerializeField] private GameObject spawnedLevel;
     
     private LevelModelHandler _currentLevelModel;
@@ -404,7 +404,7 @@ public class GameplayHandler : MonoBehaviour {
             int temp = _storeHandler.GetRewardOfLevel(selectedLevel);
             _storeHandler.SetTotalEarnedCoins(temp + _storeHandler.GetTotalEarnedCoins());
             _totalCoins = _storeHandler.GetTotalEarnedCoins();
-            //StartCoroutine(delayedTotalCoinAdder());
+            StartCoroutine(DelayedTotalCoinAdder());
         }
         //AdsManager_ZL.instance.CallInterstitialAd(Adspref.GamePause);
     }

@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -40,7 +41,7 @@ public class MainMenuHandler : MonoBehaviour
 
     [FormerlySerializedAs("UserCoins")]
     [Header("Text Fields to Display User Coins")]
-    [SerializeField] private Text[] userCoins;
+    [SerializeField] private TextMeshProUGUI[] userCoins;
     [SerializeField] private int coinsToAdd;
     [SerializeField] private SelectionStoreHandler selectionStoreHandler;
 
