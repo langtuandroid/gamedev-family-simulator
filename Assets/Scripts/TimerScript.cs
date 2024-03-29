@@ -9,7 +9,13 @@ public class TimerScript : MonoBehaviour {
 	[SerializeField] private float time = 1200;
 	[SerializeField] private bool stopTimer,stopSpinner;
 
-	[Inject] private GameplayHandler _gameplayHandler;
+	private GameplayHandler _gameplayHandler;
+
+	[Inject]
+	private void Context(GameplayHandler gameplayHandler)
+	{
+		_gameplayHandler = gameplayHandler;
+	}
 	
 	private void Start ()
 	{
@@ -18,7 +24,8 @@ public class TimerScript : MonoBehaviour {
 
 	private IEnumerator StartCoundownTimer()
 	{
-		if (!stopTimer) {
+		if (!stopTimer)
+		{
 			time -= Time.deltaTime;
 			yield return new WaitForSeconds (0.01f);
 			string minutes = Mathf.Floor (time / 60).ToString ("00");
@@ -34,14 +41,20 @@ public class TimerScript : MonoBehaviour {
 
 	private void LateUpdate()
 	{
-		if (time <= 0.5f && !stopTimer) {
+		if (time <= 0.5f && !stopTimer) 
+		{
 			stopTimer = true;
 			_gameplayHandler.RewardedAd.SetActive (true);
 		}
-		if (stopTimer) {
-			if(!stopSpinner)
+		if (stopTimer) 
+		{
+			if (!stopSpinner)
+			{
 				_gameplayHandler.SpinnerImage.fillAmount += 0.004f;
-			if (_gameplayHandler.SpinnerImage.fillAmount > 0.99f) {
+			}
+				
+			if (_gameplayHandler.SpinnerImage.fillAmount > 0.99f)
+			{
 				_gameplayHandler.LevelFail_CompleteStatusEvent (false);
 				gameObject.SetActive (false);
 			}

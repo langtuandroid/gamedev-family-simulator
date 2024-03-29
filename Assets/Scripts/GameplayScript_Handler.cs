@@ -96,7 +96,7 @@ public class GameplayHandler : MonoBehaviour {
     void Awake()
     {
         Time.timeScale = 1f;
-        //HideButtons();
+        HideButtons();
     }
 
     private void Start()
@@ -404,7 +404,7 @@ public class GameplayHandler : MonoBehaviour {
             int temp = _storeHandler.GetRewardOfLevel(selectedLevel);
             _storeHandler.SetTotalEarnedCoins(temp + _storeHandler.GetTotalEarnedCoins());
             _totalCoins = _storeHandler.GetTotalEarnedCoins();
-            StartCoroutine(DelayedTotalCoinAdder());
+            //StartCoroutine(DelayedTotalCoinAdder());
         }
         //AdsManager_ZL.instance.CallInterstitialAd(Adspref.GamePause);
     }
