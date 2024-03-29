@@ -11,7 +11,7 @@ public class DOYU : MonoBehaviour {
 //		DontDestroyOnLoad(this);
 //		#endif
         
-        StartCoroutine (Timer());
+       // StartCoroutine (Timer());
 	}
 	IEnumerator Timer()
 	{
@@ -22,7 +22,7 @@ public class DOYU : MonoBehaviour {
 			yield return new WaitForSeconds (1f);
 			time -= 1;
 		}
-		MoreAppsHandler.instance.StartCoroutine(MoreAppsHandler.instance.UpdateUI());
+		//MoreAppsHandler.instance.StartCoroutine(MoreAppsHandler.instance.UpdateUI());
 		StartCoroutine (Timer());
 	}
 }
