@@ -39,7 +39,7 @@ public class GameplayHandler : MonoBehaviour {
     
     [Header("Objective Dialog Screen")]
     [SerializeField] private GameObject objDialog;
-    [SerializeField] private Text objText;
+    [SerializeField] private TextMeshProUGUI objText;
     [SerializeField] private TextMeshProUGUI secondaryText;
     
     [Header("Gameplay Buttons")]

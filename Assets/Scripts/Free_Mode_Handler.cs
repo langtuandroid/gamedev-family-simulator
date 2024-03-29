@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -49,13 +50,13 @@ public class FreeModeHandler : MonoBehaviour
     [SerializeField] private Image loadingImage;
     [SerializeField] private GameObject env;
     [SerializeField] private GameObject resultPanel;
-    [SerializeField] private Text correctText;
-    [SerializeField] private Text wrongText;
-    [SerializeField] private Text totalText;
-    [SerializeField] private Text totalMQue;
-    [SerializeField] private Text totalSQue;
-    [SerializeField] private Text totalCQue;
-    [SerializeField] private Text totalAQue;
+    [SerializeField] private TextMeshProUGUI correctText;
+    [SerializeField] private TextMeshProUGUI wrongText;
+    [SerializeField] private TextMeshProUGUI totalText;
+    [SerializeField] private TextMeshProUGUI totalMQue;
+    [SerializeField] private TextMeshProUGUI totalSQue;
+    [SerializeField] private TextMeshProUGUI totalCQue;
+    [SerializeField] private TextMeshProUGUI totalAQue;
     [SerializeField] private GameObject[] remarks;
 
     [Inject] private SoundManager _soundManager;
@@ -343,7 +344,7 @@ public class FreeModeHandler : MonoBehaviour
         }
     }
 
-    void OnStart()
+    private void OnStart()
     {
         int index = Random.Range(0, players.Length);
         players[index].SetActive(true);
@@ -429,7 +430,7 @@ public class FreeModeHandler : MonoBehaviour
         StartCoroutine(LoadLearningScene());
     }
 
-    IEnumerator LoadLearningScene()
+    private IEnumerator LoadLearningScene()
     {
         int temp = Random.Range(0, loadingScreenImages.Length);
         loadingScreen.SetActive(true);
