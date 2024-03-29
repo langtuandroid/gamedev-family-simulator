@@ -415,7 +415,7 @@ public class FreeModeHandler : MonoBehaviour
         loadingScreen.SetActive(true);
         loadingScreen.GetComponent<Image>().sprite = loadingScreenImages[temp];
         Time.timeScale = 1f;
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(0);
     }
 
     public void GameRestart()
