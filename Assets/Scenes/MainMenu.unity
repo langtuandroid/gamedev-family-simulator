@@ -54872,7 +54872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ab996b6c3aee684aa35a3a085d20717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLoading: 0
+  isLoading: 1
   logo: {fileID: 2093735518}
   loadingImages:
   - {fileID: 21300000, guid: 34401070c287a45a39c82974277fa855, type: 3}
@@ -54897,27 +54897,7 @@ MonoBehaviour:
   soundOn: {fileID: 21300000, guid: 178926945c22e4f67a065eac05f15c72, type: 3}
   soundOff: {fileID: 21300000, guid: e376d408b4fa44f5d9324c88ecd69c27, type: 3}
   parkLevelsParent: {fileID: 1770078279915924}
-  parkLevels:
-  - {fileID: 1897771443653330}
-  - {fileID: 1546197187002960}
-  - {fileID: 1262238205686244}
-  - {fileID: 1467580100949418}
-  - {fileID: 1630698138798978}
-  - {fileID: 1158317929311286}
-  - {fileID: 1372379309519030}
-  - {fileID: 1899928172797918}
-  - {fileID: 1280550063481516}
-  - {fileID: 1142459631393412}
-  - {fileID: 100328853}
-  - {fileID: 1978092052}
-  - {fileID: 1359110563}
-  - {fileID: 2089575824}
-  - {fileID: 789123991}
-  - {fileID: 618987587}
-  - {fileID: 109840101}
-  - {fileID: 684043393}
-  - {fileID: 243577677}
-  - {fileID: 1631490792}
+  parkLevels: []
   houseLevelsParent: {fileID: 483533891}
   houseLevels: []
   totalParkLevelsUnlocked: 0
@@ -54929,7 +54909,7 @@ MonoBehaviour:
   - {fileID: 1715866334}
   - {fileID: 1726852874}
   - {fileID: 935043637}
-  coinsToAdd: 0
+  coinsToAdd: 50
   selectionStoreHandler: {fileID: 2139423060}
   removeAdsButton: {fileID: 1691650855}
   unlockLevelsButton: {fileID: 1295159204}
@@ -55972,7 +55952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalEarnedCoins: 0
-  rewardPerLevels: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  rewardPerLevels: 3200000032000000320000003200000032000000320000003200000032000000320000003200000032000000320000003200000032000000320000003200000032000000320000003200000032000000
   costOfProduct: 000000000000000000000000
 --- !u!114 &114438775301855210
 MonoBehaviour:
