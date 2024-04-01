@@ -354,6 +354,7 @@ public class GameplayHandler : MonoBehaviour {
 
     private IEnumerator LevelFail_CompleteStatus(bool temp)
     {
+        Debug.Log("SelectedLevel= " + PlayerPrefs.GetInt("SelectedLevel"));
         HideButtons();
         if (PlayerPrefs.GetInt("SelectedLevel") == 0 || PlayerPrefs.GetInt("SelectedLevel") == 11 || PlayerPrefs.GetInt("SelectedLevel") == 12 || PlayerPrefs.GetInt("SelectedLevel") == 14 || PlayerPrefs.GetInt("SelectedLevel") == 18)
         {

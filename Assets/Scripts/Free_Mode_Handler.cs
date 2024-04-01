@@ -207,8 +207,8 @@ public class FreeModeHandler : MonoBehaviour
             resultPanel.SetActive(true);
             int result = PlayerPrefs.GetInt("AnimalRightAnswers");
             correctText.text = result.ToString();
-            wrongText.text = (11 - result).ToString();
-            totalText.text = result.ToString() + "/11";
+            wrongText.text = (10 - result).ToString();
+            totalText.text = result.ToString() + "/10";
             if (result > 7)
             {
                 remarks[0].SetActive(true);
@@ -302,7 +302,7 @@ public class FreeModeHandler : MonoBehaviour
     private IEnumerator WaitAnimal()
     {
         //Debug.Log("Value of Animal Temper: " + tempAnimal);
-        if (_tempAnimal >= 0 && _tempAnimal <= 10)
+        if (_tempAnimal >= 0 && _tempAnimal <= 9)
         {
             yield return new WaitForSeconds(2f);
             //Debug.Log("Count is Greater than 0 & Less than or Equel to 9");
@@ -312,7 +312,7 @@ public class FreeModeHandler : MonoBehaviour
                 if (i == index)
                 {
                     animalQuestions[index].SetActive(true);
-                    totalAQue.text = (i + 1) + "/11";
+                    totalAQue.text = (i + 1 ) + "/10";
                 }
                 else
                 {
