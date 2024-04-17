@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4439372, g: 0.49315345, b: 0.5721989, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -259.99997, y: 50}
+  m_AnchoredPosition: {x: -260, y: 50}
   m_SizeDelta: {x: 600, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1339962
@@ -9493,8 +9493,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b854e5bd4768441a70e717451b4fd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _urlForPrivacyPolicy: https://docs.google.com/document/d/1fKEOwlvJ-X7yrVUEruQReSlTyJvz0dpF/edit#heading=h.gjdgxs
-  _urlForTerms: https://docs.google.com/document/d/1hBPtH0Liycsr5i6gy_48gwVY9L3_ZO89/edit#heading=h.gjdgxs
+  _urlForPrivacyPolicy: https://www.google.com
+  _urlForTerms: https://www.google.com
   _privacyButton: {fileID: 2664918069119370439}
   _termsButton: {fileID: 1986942513}
 --- !u!4 &397845742
@@ -40201,7 +40201,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -259.99997, y: 50}
+  m_AnchoredPosition: {x: -260, y: 50}
   m_SizeDelta: {x: 600, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1797146676
@@ -54147,7 +54147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1625352164484822
 GameObject:
   m_ObjectHideFlags: 0
